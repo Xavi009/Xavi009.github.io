@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javier Gomez: College Clubs</title>
+<link rel="icon" type="image/png" href="pictures/fav-icon.png">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+<!--Navbar-->
+<div class="w3-bar w3-black w3-text-white">
+	<a href="index.html" class="w3-bar-item w3-button w3-left"><img class="navbar-logo" src="pictures/logo.png"></a>
+	<div class="w3-dropdown-click w3-right">
+		<button class="w3-button w3-padding-16 w3-hide-small" onclick="myFunction2()">&#9776;</button>
+		<div id="demo2" class="w3-dropdown-content w3-bar-block" style="right: 0px;">
+			<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+			<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+			<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+		</div>
+	</div>
+	<a href="internships.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Internships</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Projects</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Clubs</a>
+	<a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Home</a>
+	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-animate-top">
+	<a href="index.html" class="w3-bar-item w3-button">Home</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button">College Clubs</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button">Projects</a>
+	<a href="internships.html" class="w3-bar-item w3-button">Internships</a>
+	<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+	<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+	<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+</div>
+
+
+<!--Header-->
+<div class="w3-light-grey header-grey">
+	<div class="w3-content w3-container">
+		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a class="text-ref" href="college_clubs.html">College Clubs</a></h1>
+	</div>
+</div>
+
+
+<!--Projects List-->
+<div class="obj-container" style="margin-top: 0px;">
+	<a href="rocket_project_2019.html">
+		<img class="obj-image" src="pictures/rocket_club2.jpg">
+		<p class="obj-text">Rocket Project 2019</p>
+	</a>
+</div>
+<div class="obj-container">
+	<a href="concrete_canoe_2019.html">
+		<img class="obj-image" src="pictures/canoe_club2.jpg">
+		<p class="obj-text">Concrete Canoe 2019</p>
+	</a>
+</div>
+<div class="obj-container">
+	<a href="idea_hacks_2019.html">
+		<div style="height: 400px; background-color: rgb(221, 128, 100); text-align: center;">
+			<img src="pictures/idea_hacks_2019.png" style="position: relative; top: 50%; transform: translateY(-50%); width: 65%;">
+			<p class="obj-text">IDEA Hacks 2019</p>
+		</div>
+	</a>
+</div>
+<div class="obj-container">
+	<a href="idea_hacks_2018.html">
+		<img class="obj-image" src="pictures/canoe_club2.jpg">
+		<p class="obj-text">IDEA Hacks 2018</p>
+	</a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById("demo2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</html>

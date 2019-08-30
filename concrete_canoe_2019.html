@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javier Gomez: College Clubs</title>
+<link rel="icon" type="image/png" href="pictures/fav-icon.png">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+<!--Navbar-->
+<div class="w3-bar w3-black w3-text-white">
+	<a href="index.html" class="w3-bar-item w3-button w3-left"><img class="navbar-logo" src="pictures/logo.png"></a>
+	<div class="w3-dropdown-click w3-right">
+		<button class="w3-button w3-padding-16 w3-hide-small" onclick="myFunction2()">&#9776;</button>
+		<div id="demo2" class="w3-dropdown-content w3-bar-block" style="right: 0px;">
+			<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+			<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+			<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+		</div>
+	</div>
+	<a href="internships.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Internships</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Projects</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Clubs</a>
+	<a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Home</a>
+	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-animate-top">
+	<a href="index.html" class="w3-bar-item w3-button">Home</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button">College Clubs</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button">Projects</a>
+	<a href="internships.html" class="w3-bar-item w3-button">Internships</a>
+	<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+	<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+	<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+</div>
+
+
+<!--Header-->
+<div class="w3-light-grey">
+	<div class="w3-content w3-container" style="max-width:1200px; padding-top: 90px; padding-bottom: 90px;">
+		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="college_clubs.html" class="text-ref">College Clubs</a><i class="material-icons">arrow_forward</i><a href="concrete_canoe_2019.html" class="text-ref">Concrete Canoe 2019</a></h1>
+	</div>
+</div>
+
+
+<!--Content-->
+<div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
+	<div class="content-padding">
+		<h1>What is this?</h1>
+		<div class="content-text">
+			<p>Every year we design and build a canoe made of concrete which is raced at regional and national conferences. We start Fall Quarter by designing a hull mold, practicing mix design, choosing a theme, and preparing the canoe mold for concrete. Once we have our final mix design, mold, and theme in place, we cast the canoe in less than a day. Paints are not allowed for competition, so part of the challenge is finding an effective method for casting dyed concrete while maintaining a defined design. In Winter Quarter, we sand, patch, stain and seal the canoe before competing at the Pacific Southwest Conference (PSWC). In addition to constructing the canoe, we make stands, a table displaying all materials used, and a cutaway section of the canoe for display day. Additionally, we submit a design paper prior to the conference and prepare an oral presentation.</p>
+			<p>Scoring in the competitions is based on four equally-weighted parts:</p>
+		</div>
+		<ol>
+			<li>Canoe design and contruction quality</li>
+			<li>Design report</li>
+			<li>Oral presentation</li>
+			<li>Race performance</li>
+		</ol>
+		<a class="content-text" href="files/sugar_rush_scoring.xlsx" download><i class="material-icons" style="font-size: 15px;">insert_drive_file</i>Download the final scoring sheet</a>
+		<div class="content-text">
+			<p>This year, the UCLA concrete canoe set out to create the most creative, most simple, most unified, most down-to-earth theme: baked goods and desserts. Similar to mixing ingredients, kneading dough, and baking desserts, a concrete canoe requires a specific amount of materials, mixing, and time to cure. Totaling over 2700+ man hours and $3,824, the UCLA Concrete Canoe team is proud to present <i>Sugar Rush</i>, an exhilarating combination of exacting precision and aesthetic design.</p>
+		</div>
+	</div>
+
+	<div class="content-padding">
+		<h1 id="sheets">Designing</h1>
+		<div class="content-text">
+			<p>As the hull design director for this year, I was tasked with creating a CNC’d foam male mold for us to cast concrete on. My work started during the summer where I learned the different aspects of canoe building. If you want to learn more about canoe design elements click <a class="text-ref" href="http://canoeing.com/canoes/canoe-design/" target="_blank"><b>here</b></a>. To better adapt to the newly added 200m slalom course, I focused on increasing maneuverability without compromising straight-line tracking ability necessary for the sprint course. This was accomplished by reducing the length of La Sirena’s 19.5ft mold to 19ft. the height of the canoe was left the same which meant the width was unconstrained. Three different hull widths were considered:</p>
+		</div>
+		<ol>
+			<li>Proportionally scaling the width to match the 0.5ft length reduction</li>
+			<li>Keeping the width and shape of the stern the same as <i>La Sirena</i></li>
+			<li>Interpolating the width change from the previous two options</li>
+		</ol>
+		<div class="content-text">
+			<p>In previous years, the hull design team used AutoCAD as the preferred modelling software. However, I quickly learned this program is effective at creating 2D sketches/drafts, but it is ineffective for creating 3D objects, much less objects with organic contours. To transfer the measurements from last year’s AutoCAD file, I created a spreadsheet with all the necessary measurements to make every cross section constrained (check out all the sheets <a class="text-ref" href="concrete_canoe_2019_sheets.html"><b>here</b></a>). I then created a 3D model in Autodesk Fusion 360.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 500px;" src="pictures/canoe19/canoe_shot.png">
+			</div>	
+		</div>
+		<div class="content-text">
+			<p>With this base model, I then implemented the 3 different canoe hull dimensions to create 3 new canoes. Fusion 360 was used since it is free and has a timeline feature that allows users to change dimensions for specific sketches, which makes it easy to go back and edit each dimension, enabling me to make multiple iterations of the canoe. Since I used a lot of sketches, Fusion 360 was not able to loft through all of them, especially since last year’s sketches do not follow a curved contour. The following image better visualize the spline contours of the canoe at the keel and gunwales.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 500px;" src="pictures/canoe19/cross_sections.png">
+			</div>
+			<div class="w3-col l6 m6 s12">
+				<img class="image-gal" src="pictures/canoe19/spline1.png">
+			</div>
+			<div class="w3-col l6 m6 s12">
+				<img class="image-gal" src="pictures/canoe19/spline2.png">
+			</div>
+		</div>
+		<div class="content-text">
+			<p>These images were taken from a forum which suggested what to do. My final decision was to use only a select few sketches that would generate a canoe with a better contour.</p>
+			<p>If I could change my model, I would limit my sketches to 5-7 sketches total and place more importance on the spline contours of the keel and gunwale. I would make the splines first and try to fit the sketches once the splines were created.</p>
+			<p>Realistically, however, these implementations would be trivial as small blunders in the model are lost once the mold is primed and concrete is placed over it. Concrete would be placed and then sanded down to be smooth, regardless of the imperfections of the mold.</p>
+			<p>And here it is:</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 700px;" src="pictures/canoe19/foam_mold.jpg">
+			</div>
+		</div>
+	</div>
+	
+	<div class="content-padding">
+		<h1>Computational Fluid Dynamics (CFD) Analysis</h1>
+		<div class="content-text">
+			<p>To take this project a little further, I attempted to perform computational fluid dynamic (CFD) analysis on the 3 different hull designs to see which would perform better in turning and straight-line tracking ability. Unfortunately, after two months of trying to learn ANSYS Fluent (a CFD program, among other things) and scouring the internet, I was unable to perform a substantial analysis on the different hulls. I was able to produce drag coefficients for each model, but unable to analyze the wake produced when the canoe is in contact with waves, its stability in water, or how easy it is to turn. The following data points were analyzed using laminar flow for water at 15 mph. Two test cases were analyzed:</p>
+			<ol>
+				<li>Flow coming from the front</li>
+				<li>Flow coming at a 10° angle to simulate turning the canoe</li>
+			</ol>
+		</div>
+		<table class="w3-table w3-border w3-bordered w3-centered">
+			<tr>
+				<th>Drag Coefficients</th>
+				<th>Model 1 (proportionally scaled)</th>
+				<th>Model 2 (using previous stern width</th>
+				<th>Model 3 (interpolation)</th>
+			</tr>
+			<tr>
+				<td>Straight Flow</td>
+				<td>0.82196646</td>
+				<td>0.80278143</td>
+				<td>0.80418932</td>
+			</tr>
+			<tr>
+				<td>Angled Flow</td>
+				<td>1.3734588</td>
+				<td>1.3475466</td>
+				<td>1.3698897</td>
+			</tr>
+		</table>
+		<div class="content-text">
+			<p>Unsurprisingly, small differences in max width resulted in almost same drag coefficients. The only inconsistency is that model 3 has the best straight-line drag coefficient despite being the widest canoe model. Other than that, the other results were expected.</p>
+		</div>
+		<div class="w3-container">
+			<div class="w3-row">
+				<div class="w3-col l12 m12 s12">
+					<img class="image-gal" style="margin-bottom: 30px;" src="pictures/canoe19/cfd.png">
+				</div>
+				<div class="w3-col l4 m4 s12 canoe-width">
+					<img class="image-gal" src="pictures/canoe19/1_(11.5).jpg">
+					<div class="w3-light-grey w3-center">
+						<p class="content-text">Canoe 1: Widest 11.5' from bow</p>
+					</div>
+				</div>
+				<div class="w3-col l4 m4 s12 canoe-width">
+					<img class="image-gal" src="pictures/canoe19/2_(11.5).jpg">
+					<div class="w3-light-grey w3-center">
+						<p class="content-text">Canoe 2: Widest at 11.5' from bow</p>
+					</div>
+				</div>
+				<div class="w3-col l4 m4 s12 canoe-width">
+					<img class="image-gal" src="pictures/canoe19/3_(12.0).jpg">
+					<div class="w3-light-grey w3-center">
+						<p class="content-text">Canoe 3: Widest at 12.0' from bow</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	
+	<div class="content-padding">
+		<h1>Design Report</h1>
+		<div class="content-text">
+			<p>I won’t bore you with the part that I wrote for the design report (which you can find <a class="text-ref" href="concrete_canoe_2019_design_report.html"><b>here</b></a>), but rather, the technical drawings I had to do. In the design report, we are required to provide scaled drawings of our canoe with dimensions included as well as a list of materials used. To do this, I exported my model in Fusion 360 using the drawing tab. These .dxf files were then imported into AutcCAD where I took the special elements of last year’s AutoCAD drawings and pasted them into this year’s AutoCAD files. Although it sounds simple, there was a lot of cleaning up of both sketches to make ends meet. Additionally, a 3D model had to be provided, which I decided to decorate with candies I made in Adobe Illustrator and placed on the model. These files were then exported to a pdf where our APM combined everything into one Bluebeam file.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 700px;" src="pictures/canoe19/construction_document.jpg">
+			</div>
+		</div>
+		<div class="content-text">
+			<p>Another technical element that was included in the design report was finding the prismatic coefficient for our canoe. The prismatic coefficient (PC) is the ration of the volume of a canoe of that of a prism created by projecting its largest cross-section across its length, and it quantifies how evenly the volume is distributed along the hull. A high PC indicates a uniform and buoyant canoe, while a low PC characterizes a canoe that generates minimal wavemaking resistance, while a low PC characterizes a canoe that encounters less wetted surface area resistance but limits paddler space. The most efficient PC for a canoe correlates with its speed to length ration (SLR) and the ideal PC for <i>Sugar Rush</i>'s expected SLR of 1.2 is 0.580. <i>Sugar Rush</i>’s actual PC of 0.545 deviates 6.0% from this ideal. This is a significant increase in deviation than from last year’s canoe, however, this reflects the goal of sacrificing straight-line efficiency to increase turning ability by widening the canoe. Here’s the data used to calculate the PC of <i>Sugar Rush</i>. Check out the data sheets used for calculating the PC by clicking <a class="text-ref" href="concrete_canoe_2019_sheets.html#pc"><b>here</b></a>.</p>
+		</div>
+	</div>
+	<div class="content-padding">
+		<h1>Cutaway and Materials Labels</h1>
+		<div class="content-text">
+			<p>An important element of the competition is creating a cutaway of the canoe and creating a neat presentation of the materials used. The different components of each task were divided between canoe directors to set ourselves up for one crazy almost all-nighter the day before competition. I was tasked with creating labels for the cutaway and materials. I came up with the following design which was used for all the materials.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 1000px;" src="pictures/canoe19/canoe_labels.jpg">
+			</div>
+		</div>
+		<div class="content-text">
+			<p>This was probably one of the most stressful but fun day for me because we were really fighting to finish everything the night before driving to PSWC.</p>
+		</div>
+	</div>
+	<div class="content-padding">
+		<h1>General Member Stuff</h1>
+		<div class="content-text">
+			<p>And of course, the most grueling work was general member stuff. This meant priming the foam mold, cleaning up the tent we worked in, putting concrete, and sanding (among other things).</p>
+		</div>
+	</div>
+	<div class="content-padding">
+		<h1>Pictures</h1>
+		<div class="img-row">
+			<div class="img-column">
+				<img src="pictures/canoe19/collage/1.jpg">
+				<img src="pictures/canoe19/collage/2.jpg">
+				<img src="pictures/canoe19/collage/3.jpg">
+				<img src="pictures/canoe19/collage/4.jpg">
+				<img src="pictures/canoe19/collage/5.jpg">
+				<img src="pictures/canoe19/collage/6.jpg">
+				<img src="pictures/canoe19/collage/7.jpg">
+				<img src="pictures/canoe19/collage/8.jpg">
+				<img src="pictures/canoe19/collage/23.jpg">
+				<img src="pictures/canoe19/collage/24.jpg">
+				<img src="pictures/canoe19/collage/32.jpg">
+			</div>
+			<div class="img-column">
+				<img src="pictures/canoe19/collage/9.jpg">
+				<img src="pictures/canoe19/collage/10.jpg">
+				<img src="pictures/canoe19/collage/11.jpg">
+				<img src="pictures/canoe19/collage/12.jpg">
+				<img src="pictures/canoe19/collage/13.jpg">
+				<img src="pictures/canoe19/collage/14.jpg">
+				<img src="pictures/canoe19/collage/15.jpg">
+				<img src="pictures/canoe19/collage/26.jpg">
+				<img src="pictures/canoe19/collage/27.jpg">
+				<img src="pictures/canoe19/collage/28.jpg">
+				<img src="pictures/canoe19/collage/29.jpg">
+				<img src="pictures/canoe19/collage/25.jpg">
+			</div>
+			<div class="img-column">
+				<img src="pictures/canoe19/collage/16.jpg">
+				<img src="pictures/canoe19/collage/17.jpg">
+				<img src="pictures/canoe19/collage/18.jpg">
+				<img src="pictures/canoe19/collage/19.jpg">
+				<img src="pictures/canoe19/collage/20.jpg">
+				<img src="pictures/canoe19/collage/21.jpg">
+				<img src="pictures/canoe19/collage/22.jpg">
+				<img src="pictures/canoe19/collage/30.jpg">
+				<img src="pictures/canoe19/collage/31.jpg">
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("demo2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</html>

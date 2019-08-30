@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javier Gomez: College Clubs</title>
+<link rel="icon" type="image/png" href="pictures/fav-icon.png">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+<!--Navbar-->
+<div class="w3-bar w3-black w3-text-white">
+	<a href="index.html" class="w3-bar-item w3-button w3-left"><img class="navbar-logo" src="pictures/logo.png"></a>
+	<div class="w3-dropdown-click w3-right">
+		<button class="w3-button w3-padding-16 w3-hide-small" onclick="myFunction2()">&#9776;</button>
+		<div id="demo2" class="w3-dropdown-content w3-bar-block" style="right: 0px;">
+			<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+			<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+			<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+		</div>
+	</div>
+	<a href="internships.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Internships</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Projects</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Clubs</a>
+	<a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Home</a>
+	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-animate-top">
+	<a href="index.html" class="w3-bar-item w3-button">Home</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button">College Clubs</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button">Projects</a>
+	<a href="internships.html" class="w3-bar-item w3-button">Internships</a>
+	<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+	<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+	<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+</div>
+
+
+<!--Header-->
+<div class="w3-light-grey">
+	<div class="w3-content w3-container" style="max-width:1200px; padding-top: 90px; padding-bottom: 90px;">
+		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="college_clubs.html" class="text-ref">College Clubs</a><i class="material-icons">arrow_forward</i><a href="rocket_project_2019.html" class="text-ref">Rocket Project 2019</a></h1>
+	</div>
+</div>
+
+
+<!--Content-->
+<div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
+	<div class="content-padding">
+		<h1>What is this?</h1>
+		<div class="content-text">
+			<p>Every year, NASA’s Wisconsin Space Grant Consortium (WSGC) hosts the annual First Nations Launch (FNL) National Rocket Competition.  This competition is an opportunity for students attending a Tribal College or University, or who are members of a campus AISES chapter, to design, build, and fly a rocket to be launched at a competition at the Richard Bong State Recreational Area in Kansasville, WI. The competition requires teams of undergraduate students to conceive, design, fabricate, and compete with high-powered rockets.</p>
+		</div>
+		<table class="w3-table w3-border w3-bordered">
+			<tr>
+				<th>General Engineering Parameters</th>
+				<th>Challenge Criteria</th>
+			</tr>
+			<tr>
+				<td>
+					<ul>
+						<li>Teams must have at least three (3) reportable captured data files</li>
+						<li>The rocket must exceed 3500 feet and no higher than 5000 feet (max) above ground level (AGL) using a provided motor</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>The rocket must be fin-stabilized with a static margin of one or greater</li>
+						<li>The rocket is required to use a commercial electronic deployment recovery system (Altimeter)</li>
+						<li>The electronic recovery system must deploy a drogue chute at apogee and a main chute at a specified height for a “Safe Flight Mission”</li>
+						<li>Teams that come closest to their predicted apogee based on their prediction stated on the final report will gain points for the flight performance portion of the competition</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<h2>The Grading Scheme</h2>
+		<ul class="content-text">
+			<li>Design Reports (60%)</li>
+			<li>Launch Weekend Presentations (10%)</li>
+			<li>Flight Performance (30%)</li>
+		</ul>
+	</div>
+	<div class="content-padding">
+		<h1>My Role</h1>
+		<div class="content-text">
+			<p>As the electronics lead, my main tasks were to ensure dual deployment occurred during flight and to satisfy the challenge portion of the competition. To efficiently use space in the rocket, all electronics were centralized into one electronics bay (a combination of the payload and avionics bay). For this reason, I was also tasked with designing and manufacturing a locking mechanism/bulkhead and an avionics sled to neatly house all electronics. Additionally, I hosted two Arduino workshops to teach incoming freshman hardware programming and peak club interest. The logistics of the general rocket design, financing, consolidating reports, and general management were handled by other leads.</p>
+		</div>
+	</div>
+	<div class="content-padding">
+		<h1>The Locking Mechanism and Sled</h1>
+		<div class="content-text">
+			<p>The locking mechanism and sled attached the electronics to the rocket. The locking mechanism consisted of 2 main components (the outer and inner ring). The outer ring is epoxied to the body tube of the rocket and is shaped so that the inner ring can slide and lock into place. The sled, which snugly contains all electronics, is epoxied onto the inner ring of the locking mechanism. The inner ring also has an “eye-bolt” drilled in to fasten the shock cord to the rocket. Each ring was made using 2 layers of 0.75in thick pinewood which were CNC’d to the appropriate dimensions. The outer diameter of the outer ring was 3.8in to snugly fit into the 4in body tube. Originally, a rubber sheet was going to be attached on top of the inner ring to provide an airtight seal, but a lack of communication between me and team member scrapped the idea.</p>
+			<p>The sled of the avionics bay was the most problematic since it was a matter of space management and prototyping. The sled features a 10.9in long T-Shape 3D printed fitting with a flat end for increased surface area and  adhesion to the inner ring. The sled fits 2 altimeters, 3 9V batteries, an Arduino Uno, an MPU6050, and a BMP180 module. The 9V batteries are enclosed with custom made 9V battery holders. Due to space limitations, the Arduino Uno had to have its standard rails desoldered and all connections were soldered directly to the board. The MPU6050 and BMP180 were located on the opposite side of the Arduino Uno, so cable management was essential.</p>		
+		</div>
+		<div class="w3-container">
+			<div class="w3-row">
+				<div class="w3-col l4 m4 s12">
+					<img class="image-gal" src="pictures/rocket19/locking_blowup.jpg">
+				</div>
+				<div class="w3-col l4 m4 s12">
+					<img class="image-gal" src="pictures/rocket19/sled_diagram.jpg">
+				</div>
+				<div class="w3-col l4 m4 s12">
+					<img class="image-gal" src="pictures/rocket19/display2.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-padding">
+		<h1 id="payload">The Payload</h1>
+		<div class="content-text">
+			<p>To solve the challenge, the following electronics were incorporated in the payload: an Arduino Uno, a MPU6050 Gyroscope/accelerometer module, a BMP180 Pressure Sensor, an SD Card Module, and a 9V battery. Although the challenge only requires 3 data types, 5 data types were acquired in case of individual component failure in a module. These components formed what is known as the payload of the rocket.</p>
+		</div>
+		<table class="w3-table w3-border w3-bordered">
+			<tr>
+				<th>Arduino Uno</th>
+				<th>MPU6050</th>
+				<th>BMP180</th>
+				<th>SD Card Module</th>
+			</tr>
+			<tr>
+				<td>Controls and reads instruments and exports data</td>
+				<td>Reads acceleration and angular velocity in 3 axes</td>
+				<td>Reads pressure, temperature, and altitude</td>
+				<td>Stores data for post launch analysis</td>
+			</tr>
+		</table>
+		<div class="content-text">
+			<p>The following wiring schematic was adopted. Since both the MPU6050 and BMP180 used I2C buses to communicate with the microcontroller, data was captured from both devices using the same pins. For further insight on the code, click <b><a class="text-ref" href="rocket_project_code.html">here</a></b>.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l8 m12 s12">
+				<img class="image-gal" src="pictures/rocket19/payload_schematic.png">
+			</div>
+			<div class="w3-col l4 m6 s12">
+				<img class="image-gal" src="pictures/rocket19/display1.jpg">
+			</div>
+			<div class="w3-col l4 m6 s12">
+				<img class="image-gal" src="pictures/rocket19/display4.jpg">
+			</div>
+		</div>
+
+		<h2>Acquiring Data</h2>
+		video/gif of real-time data
+		<div class="content-text">
+			<p>After launch, various data points were obtained and were exported onto an SD Card. Since data types were delineated by a comma, data could be separated in excel for analysis. Unfortunately, since both data modules were controlled using the same two pins, data gathering was not fast enough for a high speed launch. Additionally, turbulence during the flight rendered the MPU6050 useless due to the module’s high sensitivity. The following graphs display clear trends for data types gathered by the BMP180, but not the MPU6050. Due to lack of time, the MPU6050 was taped onto the avionics sled, which meant the XYZ-axis were not centered properly, so G-force values are incorrect.</p>
+		</div>
+		<div class="w3-container">
+			<div class="w3-row">
+				<div class="w3-col l4 m6 s12">
+					<img class="image-gal" src="pictures/rocket19/pressure.jpg">
+				</div>
+				<div class="w3-col l4 m6 s12">
+					<img class="image-gal" src="pictures/rocket19/altitude.jpg">
+				</div>
+				<div class="w3-col l4 m6 s12">
+					<img class="image-gal" src="pictures/rocket19/temperature.jpg">
+				</div>
+				<div class="w3-col l4 m6 s12">
+					<img class="image-gal" src="pictures/rocket19/accelx.jpg">
+				</div>
+				<div class="w3-col l4 m6 s12">
+					<img class="image-gal" src="pictures/rocket19/accely.jpg">
+				</div>
+				<div class="w3-col l4 m6 s12">
+					<img class="image-gal" src="pictures/rocket19/accelz.jpg">
+				</div>
+				<div class="w3-col l4 m6 s12">
+					<img class="image-gal" src="pictures/rocket19/gyrox.jpg">
+				</div>
+				<div class="w3-col l4 m6 s12">
+					<img class="image-gal" src="pictures/rocket19/gyroy.jpg">
+				</div>
+				<div class="w3-col l4 m6 s12">
+					<img class="image-gal" src="pictures/rocket19/gyroz.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="content-text">
+			<p>Overall the payload performed decently. If I could change something, I would omit the MPU6050 and gather a different data type, such as pressure at the nosecone vs pressure at the fins. Or I would try and find a way to make the MPU6050 less sensitive and take averages to prevent scattered data points for rotation values.</p>
+		</div>
+	</div>
+	<div class="content-padding">
+		<h1>Avionics Bay</h1>
+		<div class="content-text">
+			<p>The avionics bay consisted of two altimeters and two 9V batteries as well as the payload. One of the most crucial objectives of the rocket is to safely recover the rocket. This action was operated by the altimeters. Altimeters read temperature and pressure data to determine altitude. Once a desired altitude was reached, the altimeter would send a charge to an ejection charge, which would cause a controlled explosion within the rocket and a parachute would deploy.</p>
+			<p>Two altimeters were used for redundancy. In case the primary altimeter failed and did not send a signal to the ejection charges, a 2nd altimeter would do the same process. The primary altimeter used was a Missile Works RRC3 Sport Altimeter (RRC3) and the redundant altimeter was a Perfect Flite StratoLogger SL100 Altimeter (SL100). The main altimeter was programmed to deploy the drogue chute at apogee and the main chute at 500 ft above ground level. The redundant altimeter was programmed to deploy with a 3 second delay. A drogue chute was used to decrease descent time without descending too fast and the main chute would further slow the rocket for a safe landing. Click <a  class="text-ref" href="rocket_project_altimeters.html"><b>here</b></a> to learn more about programming the altimeters.</p>
+			<p>The use of switches not only makes powering the electronics bay easier, but it reduces the amount of energy used by reducing idle time. Using Anderson Powerpole Connector Pins allowed the electronics bay to be wired and positioned in the rocket and placed on the launch vehicle without powering anything. Once ready for flight, the switches were connected to power all electronics. A total of 3 switches were used; one for each altimeter and one for the Arduino Uno. Since the Arduino has no pins dedicated for switches, the ground of the battery was attached to the switch. The following wiring schematic was used:</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 500px;" src="pictures/rocket19/avionics_schematic.png">
+			</div>
+			<div class="w3-col l7 m7 s12">
+				<img class="image-gal" src="pictures/rocket19/avionics_block.png">
+			</div>
+			<div class="w3-col l5 m5 s12">
+				<img class="image-gal" src="pictures/rocket19/avionics_blowup.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="content-padding">
+		<h1>Pictures</h1>
+		<div class="img-row">
+			<div class="img-column">
+				<img src="pictures/rocket19/collage/1.jpg">
+				<img src="pictures/rocket19/collage/2.jpg">
+				<img src="pictures/rocket19/collage/3.jpg">
+				<img src="pictures/rocket19/collage/4.jpg">
+				<img src="pictures/rocket19/collage/5.jpg">
+			</div>
+			<div class="img-column">
+				<img src="pictures/rocket19/collage/7.jpg">
+				<img src="pictures/rocket19/collage/8.jpg">
+				<img src="pictures/rocket19/collage/9.jpg">
+				<img src="pictures/rocket19/collage/10.jpg">
+				<img src="pictures/rocket19/collage/11.jpg">
+			</div>
+			<div class="img-column">
+				<img src="pictures/rocket19/collage/12.jpg">
+				<img src="pictures/rocket19/collage/13.jpg">
+				<img src="pictures/rocket19/collage/14.jpeg">
+				<img src="pictures/rocket19/collage/15.jpeg">
+				<img src="pictures/rocket19/collage/16.jpeg">
+				<img src="pictures/rocket19/collage/6.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("demo2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</html>
