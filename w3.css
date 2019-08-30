@@ -30,9 +30,9 @@ body, html {
 /*Intro*/
 .intro-bg {
   /* Full height */
-  background-image:url("pictures/profile_picture.JPG");
+  background-image:url("pictures/profile_picture.jpg");
   height: 100%;
-  /* Center and scale the image nicely */
+  /* Center and scale the image */
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
