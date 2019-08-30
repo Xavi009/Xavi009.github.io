@@ -30,7 +30,7 @@ body, html {
 /*Intro*/
 .intro-bg {
   /* Full height */
-  background-image:url("https://github.com/Xavi009/Xavi009.github.io/blob/master/pictures/profile_picture.JPG");
+  background-image:url("pictures/profile_picture.JPG");
   height: 100%;
   /* Center and scale the image nicely */
   background-position: top;
