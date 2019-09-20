@@ -55,8 +55,8 @@ body, html {
 .padding-about{
 	padding-top: 40px;
 	padding-bottom: 40px;
-	padding-left: 40px;
-	padding-right: 40px;
+	max-width: 450px;
+	margin: auto;
 }
 .about-text{
 	font-size: 17px;
