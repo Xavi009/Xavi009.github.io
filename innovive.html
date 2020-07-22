@@ -48,48 +48,132 @@
 <!--Content-->
 <div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
 	<div class="content-padding">
-		<h1>What is Innovive</h1>
+		<h1>What is Innovive?</h1>
 		<div class="content-text">
-			<p>Innovive is a company that likes rats.</p>
+			<p>Innovive is a US-based technology company that serves the global laboratory research market with products and services that allow animal research facilities to dedicate more of their efforts towards scientific discovery than was previously possible. Their patented Disposable IVC Rodent Caging System empowers the husbandry industry with the option of eliminating traditional cage wash operations, freeing up capital funding, space, time, labor, utilities and other valuable resources.</p>
 		</div>
 
 	<div class="content-padding">
 		<h1>Work</h1>
 		<div class="content-text">
-			<p>I did some stuff</p>
+			<p>As an automation engineering intern, I was primarily tasked with aiding the engineering and maintenance department with typical daily issues. A major operation carried out in the warehouse was the retrofitting of an old Chinese bottling and capping machine. Two years prior to the start of my internship, the engineering department at Innovive purchased a used bottling and capping machine with the prospect of reducing costs by buying used machinery and adapting the machine for a fraction of the cost. This turned out to be a costly and complicated procedure because of the man-hours involved in adapting the machinery. Major problems stemmed from the relatively large size of the machine in comparison to the room, the use of ANSI standard components on a previously ISO standard machine, and Innovive’s use of awkwardly shaped bottles.</p>
 		</div>
-	
+
 	<div class="content-padding">
-		<h1>Manufacturing</h1>
+		<h1>Projects</h1>
+		<h2>Water Filler Retrofitting</h2>
 		<div class="content-text">
-			<p>I made some pieces that underwent a lot of prototyping</p>
+			<p>The capping machine had multiple stages to successfully fill and cap each water bottle. The process starts by dumping a bunch of empty plastic water bottles into a hopper. A conveyor then dumps the unarranged water bottles into a sorter to orient the bottles correctly before entering the filling and capping stage. Once capped, the bottles would have a sticker placed and a worker would arrange the bottles into packages for shipping. A series of sensors at different locations at each stage would provide feedback to the programmable logic controller (PLC).</p>
+			<p>One of the issues in the assembly I was tasked with was orienting the bottles more consistently in the sorter stage. Bottles in the sorter would clog the entrance if further down the line there was an issue or operations stopped. This would cause all oriented bottles to bounce off the entrance and would require a worker to unjam the entrance. Additionally, if the assembly line is backed up, bottles would rub against each other and eventually pop up and out of the assembly line. This further complicates operation of the machine.</p>
+			<p>The water bottle sorter worked by spinning the unorganized bottles in circle. The centripetal force of the spinning motion causes the bottles to align to the wall. Bottles that aren’t in the upright position are kicked off the wall by a protruding metal sheet. Because of the geometry of the bottles (wide and short base), contact occurs at the base and not with the neck of the bottle. This means that the protruding metal sheet has contact with bottles that are flipped, but not with those that are oriented correctly. If the bottles pass this step of the sorting stage, the bottles can enter the assembly line by continuing to spin. The problem is that if the assembly line is backed up, bottles in the sorter tend to pop out of place before entering the assembly line which clogs the entrance of the assembly line.</p>
+			<p>My solution was to create a rail system in the sorting stage that interacted with the neck of the bottle. This would have the added benefit of allowing the bottles to move while restraining the bottles from popping out of place. To do this, a piece would push the upright bottles towards the inner wall of the assembly line entrance. Once near the entrance of the assembly line entrance, a set of custom rails would guide the bottles into the assembly line.</p>
+			<p>My general process was to create fast and cheap prototypes by laser cutting carboard cutouts. Once the desired dimensions are achieved, I would laser cut parts using Delrin. Delrin was used for its strength, flexibility, and unreactive properties to water. The brackets were ordered to be waterjet elsewhere but were folded using Innovive’s sheet metal folder.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l4 m4 s12">
+				<img class="image-gal" src="pictures/innovive/1.jpg">
+			</div>
+			<div class="w3-col l4 m4 s12">
+				<img class="image-gal" src="pictures/innovive/2.jpg">
+			</div>
+			<div class="w3-col l4 m4 s12">
+				<img class="image-gal" src="pictures/innovive/3.jpg">
+			</div>
+		</div>
+		<div class="content-text">
+			<p>The final product features stainless steel brackets with two 1/4" slots for each mounting point. The Delrin rails also have a slot for the 1/4” bolt to go through. The slots allow generous amount of play so that the rails can be adjusted easily. Each rail has two mounting points for stability. Since Delrin can deform under high loads (such as tightening a nut), a washer was placed at every nut-to-rail interface to prevent damage to the rail. Additionally, a split lock was placed to add tension to the nut to prevent loosening from vibrations. The worst part the whole process was drilling several holes into the existing machine, which was made of .2” thick stainless-steel sheets. Drilling each hole would take at least 15 minutes each!</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l4 m4 s12">
+				<img class="image-gal" src="pictures/innovive/4.jpg">
+			</div>
+			<div class="w3-col l4 m4 s12">
+				<img class="image-gal" src="pictures/innovive/5.jpg">
+			</div>
+			<div class="w3-col l4 m4 s12">
+				<img class="image-gal" src="pictures/innovive/6.jpg">
+			</div>
+		</div>
+		<h2>Dosing Cabinet Sensor</h2>
+		<div class="content-text">
+			<p>At Innovive, customers are able to select the water treatment/processing. Customers can select between 3 chemical treatment types that their rodents will be drinking. Since the chemicals used for processing the water are highly concentrated and caustic, deterioration of safety mechanisms occurs. Sensors are placed in each dosing cabinet to alert the PLC if a chemical bottle is present or not. In the past, warehouse workers forget to replace the bottle but allow operations to resume. This jeopardizes the product’s quality control. In order to refurbish the safety mechanism within the acid cabinet, I created a bracket assembly and an airtight housing for an LRZ sensor (laser sensor) instead of using a mechanical switch. The bracket mounts were laser cut Delrin pieces and the housing was made out of SLA resin. The Delrin brackets were tapped so that 1/4" bolts could be used. Chemically unreactive plastic nuts and bolts were used to fix the acrylic and rubber panel to the case. The goal of this project was to make the safety mechanism less mechanically complex while still being easy to access by warehouse workers in the case repairs are necessary. A lot of manual labor went into this project as well as I had to move a lot of things inside and outside the cabinet to fit and run the wires successfully. Unfortunately I didn’t take a picture of the final product in the cabinet, but here are some of the pictures I did take.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l3 m6 s12">
+				<img class="image-gal" src="pictures/innovive/7.jpg">
+			</div>
+			<div class="w3-col l3 m6 s12">
+				<img class="image-gal" src="pictures/innovive/8.jpg">
+			</div>
+			<div class="w3-col l6 m12 s12">
+				<img class="image-gal" src="pictures/innovive/9.png">
+			</div>
+		</div>
+		<button type="button" class="collapsible">Click here to view the latest 3D models</button>
+		<div class="content-button">
+			<x-model class="threeDmodel" src="files/acid_cabinet.obj"></x-model>
+			<p>test</p>
+		</div>
+		<h2>New Safety Locks</h2>
+		<div class="content-text">
+			<p>Another retrofit feature to the water bottling machine is the use of safety sensors near the doors of the machine. These sensors detect if a door has been opened. If the door is opened, the PLC stops the entire machine and beeps to indicate someone has opened the door. This prevents workers from trying to fix issues with the machine despite not being qualified to handle the machine. While not impressively technical, the project took a long time. Holes had to be drilled to mount the sensors, wires had to be stripped, soldered and placed within a waterproof casing, and wires had to be hidden.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l3 m6 s12">
+				<img class="image-gal" src="pictures/innovive/10.jpg">
+			</div>
+			<div class="w3-col l3 m6 s12">
+				<img class="image-gal" src="pictures/innovive/11.jpg">
+			</div>
+			<div class="w3-col l6 m12 s12">
+				<img class="image-gal" src="pictures/innovive/12.png">
+			</div>
+		</div>
+		<h2>Racks</h2>
+		<div class="content-text">
+			<p>Another one of the fun projects I did was creating a rack-and-slide mounting system for some developmental electronics at Innovive. One of the software engineers needed a way to mount electronics at various locations around the warehouse while still being easy to access and work with if needed. I 3D printed a rack with threaded inserts so the electronics can be fastened onto it and then also 3D printed a sliding bracket that can be drilled into walls.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 450px;" src="pictures/innovive/13.jpg">
+			</div>
+		</div>
+		<div class="content-text">
+			<p>Click <a  class="text-ref" href="rocket_project_altimeters.html"><b>here</b></a> to view the 3D models.</p>
+		</div>
+		<h2>Other Stuff</h2>
+		<div class="content-text">
+			<p>Finally, here are some pictures of some of the other stuff I created.</p>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col l4 m4 s12">
+				<img class="image-gal" src="pictures/innovive/14.jpg">
+			</div>
+			<div class="w3-col l4 m4 s12">
+				<img class="image-gal" src="pictures/innovive/15.jpg">
+			</div>
+			<div class="w3-col l4 m4 s12">
+				<img class="image-gal" src="pictures/innovive/16.jpg">
+			</div>
 		</div>
 	</div>
 	
 	<div class="content-padding">
 		<h1>Manuals</h1>
 		<div class="content-text">
-			<p>My boss really like that I knew how to use Adobe Illustrator. I made over simplified identification manuals so warehouse employees could identify certain parts if they are malfunctioning.</p>
+			<p>A big part of my work involved making official documents/manuals outlining procedures on how to operate distinct features of the water capping process. Not only would this provide a physical document for the engineering department to reference, but it also allowed warehouse workers to understand the process at a basic level by providing various pictures. I collaborated frequently with the engineering department to better understand the water processing and bottling process and to see what requirements they wanted present in the document. All the documents were done in Adobe Illustrator, which my manager loved. Shown below is a picture of one page of an identification manual.</p>
 		</div>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" src="pictures/innovive/17.png">
+			</div>
+		</div>
+		<a class="content-text" href="files/SOP.zip" download><i class="material-icons" style="font-size: 15px;">insert_drive_file</i>Download the SOPs</a>
 	</div>
 
-	<div class="content-padding">
-		<h1>Pictures</h1>
-		<div class="img-row">
-			<div class="img-column">
-				<img src="pictures/canoe19/collage/1.jpg">
-			</div>
-			<div class="img-column">
-				<img src="pictures/canoe19/collage/9.jpg">
-			</div>
-			<div class="img-column">
-				<img src="pictures/canoe19/collage/16.jpg">
-			</div>
-		</div>
-	</div>
 	
-
 </div>
+<!---NavBar--->
 <script>
 function myFunction() {
   var x = document.getElementById("demo");
@@ -108,4 +192,25 @@ function myFunction2() {
   }
 }
 </script>
+<!---Collapsible--->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<!--3D Model Stuff--->
+<script src="files/js/three.min.js"></script>
+<script src="files/js/three-obj-loader.js"></script>
+<script src="files/js/model-element.min.js"></script>
+
 </html>
