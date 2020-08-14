@@ -207,7 +207,6 @@ body, html {
 /*Model Stuff*/
 model-viewer {
   width: 100%;
-  
 }
 
 
@@ -224,7 +223,6 @@ model-viewer {
 	font-size: 15px;
 }
 .content-button{
-	padding: 0 18px;
 	display: none;
 	overflow: hidden;
 	background-color: #f1f1f1;

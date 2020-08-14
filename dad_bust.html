@@ -62,8 +62,9 @@
 
 		<h2>Scanning Using Kinect Sensor</h2>
 		<div class="content-text">
-			<p>I also experimented with using a scanning technique instead of photogrammetry to generate 3D models. The Kinect sensor has an included infrared sensor which allows it to be used as a cheap alternative to pricey scanners. However, the Kinect is old technology and the picture quality is not the best. For software, I tried using the free version of Skanect, however, it limits the number of polygons that can be exported for a model. The polygon count is capped at 5000 which is very little for the level of detail I wanted. I was able to make a 3D model of myself using this method, however, the low polygon export removes a lot of the detail. After doing a little bit of processing, here’s the final model I was able to create.</p>
-			<model-viewer src="files/test.glb" shadow-intensity="2" auto-rotate camera-controls style="background-color: #D1D1D1; height: 500px;"></model-viewer>
+			<p>I also experimented with using a scanning technique instead of photogrammetry to generate 3D models. The Xbox 360 Kinect sensor has an included infrared sensor which allows it to be used as a cheap alternative to pricey scanners. However, the Kinect is old technology and the picture quality is not the best. For software, I tried using the free version of Skanect, however, it limits the number of polygons that can be exported for a model. The polygon count is capped at 5000 which is very little for the level of detail I wanted. I was able to make a 3D model of myself using this method, however, the low polygon export removes a lot of the detail. After doing a little bit of processing, here’s the final model I was able to create.</p>
+			<model-viewer src="files/bust/javier_bust.glb" shadow-intensity="2" auto-rotate camera-controls camera-orbit="135deg 60deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;"></model-viewer>
+			<a href="files/bust/javier_bust.stl" download><i class="material-icons" style="font-size: 15px;">insert_drive_file</i>Download the .STL file</a>
 		</div>
 	</div>
 </div>
