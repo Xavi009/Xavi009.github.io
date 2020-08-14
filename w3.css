@@ -204,16 +204,13 @@ body, html {
 }
 
 
+/*Model Stuff*/
+model-viewer {
+  width: 100%;
+  
+}
 
-.threeDmodel { 
-  animation: spin 10s linear infinite;
- }
 
- @keyframes spin {
-   to {
-     transform: rotateY(1turn)
-   }
- }
 
 
 .collapsible {

@@ -63,12 +63,11 @@
 		<h2>Scanning Using Kinect Sensor</h2>
 		<div class="content-text">
 			<p>I also experimented with using a scanning technique instead of photogrammetry to generate 3D models. The Kinect sensor has an included infrared sensor which allows it to be used as a cheap alternative to pricey scanners. However, the Kinect is old technology and the picture quality is not the best. For software, I tried using the free version of Skanect, however, it limits the number of polygons that can be exported for a model. The polygon count is capped at 5000 which is very little for the level of detail I wanted. I was able to make a 3D model of myself using this method, however, the low polygon export removes a lot of the detail. After doing a little bit of processing, here’s the final model I was able to create.</p>
-			
+			<model-viewer src="files/test.glb" shadow-intensity="2" auto-rotate camera-controls style="background-color: #D1D1D1; height: 500px;"></model-viewer>
 		</div>
 	</div>
 </div>
 
-<model-viewer src="files/test.glb" style="width: 1200 px;"></model-viewer>
 
 <!--Navbar Script-->
 <script>
@@ -90,6 +89,6 @@ function myFunction2() {
 }
 </script>
 <!--Model Viewer-->
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </html>
