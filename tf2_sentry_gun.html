@@ -45,12 +45,36 @@
 
 <!--Past Projects and Experience-->
 <div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
+	<div class="w3-row">
+		<div class="w3-col l12 m12 s12">
+			<img class="image-gal" style="max-width: 100%;" src="pictures/sentry_gun/demonstration_vid.gif">
+		</div>
+	</div>
 	<div class="content-padding">
-		<h1>How It's Made</h1>
 		<div class="content-text">
-			<p>Test <a href="https://www.models-resource.com/" target="_blank">The Models Resource</a> into Autodesk 3ds Max 2016 and modified it using a biped skeleton. This allows me to map an existing mesh onto a human skeleton, allowing me to shape the existing model into a dynamic pose. Finally, I repaired the exported .STL file from 3ds Max into Microsoft’s STL Repair <a href="https://tools3d.azurewebsites.net/" target="_blank">website</a>. This website analyzes and repairs any open surfaces in the .STL file and optimizes the model for 3D printing. The final result was better than anything I would have hoped for.</p>
-			<model-viewer src="files/captain_falcon/Sentry Gun.glb" shadow-intensity="2" auto-rotate camera-controls camera-orbit="135deg 50deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;"></model-viewer>
-			<p>Download the files on my Thingiverse <a href="https://www.thingiverse.com/thing:1506971" target="_blank">website</a>.</p>
+			<p>Let’s get one thing straight…I’ve played way too much Team Fortress 2 (TF2). I guess you can say I love this game. One of the playable characters is the Engineer, which makes the iconic sentry gun. The sentry gun’s purpose is to automatically track and shoot enemies if they’re within the field of range of the gun. If there is no enemy, the sentry gun scans back and forth until an enemy comes into view. Many dweebs (myself included) have been inspired by the possibility of making this virtual object into a working reality. My rendition of the sentry gun excludes the tracking and shooting portion and only scans back and forth while making the iconic sounds. I wanted to make a sentry gun that could fit on my desk and move like in the game.</p>
+		</div>
+	</div>
+	<div class="content-padding">
+		<h1>How It Works</h1>
+		<div class="content-text">
+			<p>The desktop sentry gun works by plugging in the attached USB cable to a 5V USB adapter. This will power the sentry gun. Make sure that the sentry gun’s “head” is aligned prior to plugging in the cable. The program references this initial position as the equidistant point for its operation. And done!</p>
+			<p>If you want to stop operation of the sentry gun, press the button prior to unplugging it. This will cause the sentry gun to go back to its center position and hold that position for ~6 seconds. Once it’s stationary, you can unplug the USB cable.</p>
+		</div>
+	</div>
+	<div class="content-padding">
+		<h1>Design</h1>
+		<div class="content-text">
+			<p>The design was created by importing .STL files of pre-existing TF2 sentry guns into Fusion 360 and scaling everything until one of the 28BYJ-48 ULN2003 stepper motors could fit within the main body of the sentry gun. Since most of the parts did not need to be modified, the original files were scaled and printed without modifications. The main body of the sentry gun, the holding piece, and the middle shaft were created from scratch to accommodate the stepper motor needed to motorize the sentry gun. Luckily the printers at the MakerSpace at UCLA are good at handling odd geometries so I didn’t have to think too much about the “printability” of the parts I created. The case for the electronics was rather simple as there was plenty of space for the electronics, however, I added snap fit connections so the two base parts are easy to remove.</p>
+			<model-viewer src="files/sentry_gun/Sentry Gun.glb" shadow-intensity="2" auto-rotate camera-controls camera-orbit="135deg 50deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;"></model-viewer>
+		</div>
+	</div>
+	<div class="content-padding">
+		<h1>Electronics</h1>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 100%;" src="pictures/sentry_gun/schematic.png">
+			</div>
 		</div>
 	</div>
 </div>
