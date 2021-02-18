@@ -39,7 +39,7 @@
 <!--Header-->
 <div class="w3-light-grey">
 	<div class="w3-content w3-container" style="max-width:1200px; padding-top: 90px; padding-bottom: 90px;">
-		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="personal_projects.html" class="text-ref">Personal Projects</a><i class="material-icons">arrow_forward</i><a class="text-ref" href="tf2_sentry_gun.html">TF2 Sentry Gun</a></h1>
+		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="personal_projects.html" class="text-ref">Personal Projects</a><i class="material-icons">arrow_forward</i><a class="text-ref" href="poop_bucket.html">Poop Bucket</a></h1>
 	</div>
 </div>
 
@@ -52,15 +52,25 @@
 	</div>
 	<div class="content-padding">
 		<div class="content-text">
-			<p>Let's get one thing straight...I've played way too much Team Fortress 2 (TF2). I guess you can say I love this game. One of the playable characters is the Engineer, who is able to make the iconic sentry gun. The sentry gun's purpose is to automatically track and shoot enemies if they're within the field of range of the gun. If there is no enemy, the sentry gun scans back and forth until an enemy comes into view. Many dweebs (myself included) have been inspired by the possibility of making this virtual object into a working reality. My rendition of the sentry gun excludes the tracking and shooting portion and only scans back and forth while making the iconic sounds. I wanted to make a sentry gun that could fit on my desk and move like in the game.</p>
+			<p>Ok. I already know what you're thinking; why did I even make this? Fair question. Let me provide some context.</p>
+			<p>At the start of 2020, the novel Coronavirus for some reason caused mass panic buying of toilet paper. Out of all things...toilet paper. I had this poop bucket idea for the longest time, but now more than ever my product needed to become a reality. The poop bucket efficiently wipes your ass by continuously using each square as opposed to using only a small dot of a toilet paper square using conventional wiping methods. The poop bucket also conveniently stores the used side onto another roll facing inwards, revealing a brand-new fresh side. This means that the poop bucket at least doubles the use per toilet paper roll, saving you money and time fighting over toilet paper at the store.</p>
 		</div>
 	</div>
 	<div class="content-padding">
 		<h1>How It Works</h1>
 		<div class="content-text">
-			<p>The desktop sentry gun works by plugging in the attached USB cable to a 5V USB adapter. This will power the sentry gun. Make sure that the sentry gun's "head" is aligned prior to plugging in the cable. The program references this initial position as the equidistant point for its operation. And done!</p>
-			<p>If you want to stop operation of the sentry gun, press the button prior to unplugging it. This will cause the sentry gun to go back to its center position and hold that position for ~6 seconds. Once it's stationary, you can unplug the USB cable.</p>
-			<iframe width="100%" height="479" src="https://www.youtube.com/embed/dPrOoYUjC_o"allowfullscreen></iframe>
+			<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
+		</div>
+	</div>
+	<div class="content-padding">
+		<h1>Design</h1>
+		<div class="content-text">
+			<p>The design is actually a lot more involved than you'd think. Traditionally, industrial toilet paper rollers use two motors on the rollers to properly tension the toilet paper material through its manufacturing stages. As the radius of one roll/roller increases, its angular speed is decreased. The opposite is true for the roll/roller that unravels its material. Sensors on the roller provide closed loop feedback to a controller that varies the speed of each roller, ensuring a constant tension. However, to properly tension the roll with only 1 motor, a minimum of 90&#176 angle bend is needed on a "dancer roller" (<a href="https://www.montalvo.com/article-library/accurate-consistent-tension-control-max-productivity-roll-roll-roll-sheet-process/" target="_blank">Source</a>).</p>
+		</div>
+	</div>
+	<div class="w3-row">
+		<div class="w3-col l12 m12 s12">
+			<img class="image-gal" style="max-width: 100%;" src="pictures/poop_bucket/tension_diagram.png">
 		</div>
 	</div>
 	<div class="content-padding">
@@ -102,11 +112,9 @@
 	</div>
 	<div class="content-padding">
 		<h1>Context and Struggles</h1>
-		<div class="content-text">
-			<p>Going into my first year of college, I had some experience with 3D printing and Arduino from self-exploration in high school, but not really that much. At one point in my first year, I got tired of not making anything and UCLA had really high-quality printers. So naturally, I started modelling the sentry gun and 3D printing the prototypes. I used pre-existing .STL models available online as a template, but I modified mine to be able to fit the electronics I wanted. The 3D printing prototype process was not new to me so this was easy. It was the electronics that gave me a hard time.</p>
-			<p>This project had a lot of firsts for me. I learned how to shrink my projects using Arduino Nanos instead of Unos. I also learned about OP-Amps and how to integrate speakers into projects. Because I had no textbook knowledge of OP-Amps, this part was extremely difficult for me. This mainly had to do with the fact that I was really hesitant to buy electronic parts in bulk. Specifically, I needed a range of capacitors to operate the OP-Amp, but I just stuck to use one specific large catalytic capacitor. You might laugh since OP-Amps are basically operated on capacitors, but how the hell was I supposed to know back then?</p>
-			<p>Another difficulty was the speaker. The speaker caused me all sorts of problems. The SD card has to be formatted, the audio file also has to be formatted, the concept of OP-Amp operation, and the code to create digital PWM signals was difficult to understand. There were so many variables I didn't fully understand which complicated and lengthened the amount of time spent creating this project. But now I know what to expect when doing audio-based projects, so that's cool.</p>
-		</div>
+		<p>Going into my first year of college, I had some experience with 3D printing and Arduino from self-exploration in high school, but not really that much. At one point in my first year, I got tired of not making anything and UCLA had really high-quality printers. So naturally, I started modelling the sentry gun and 3D printing the prototypes. I used pre-existing .STL models available online as a template, but I modified mine to be able to fit the electronics I wanted. The 3D printing prototype process was not new to me so this was easy. It was the electronics that gave me a hard time.</p>
+		<p>This project had a lot of firsts for me. I learned how to shrink my projects using Arduino Nanos instead of Unos. I also learned about OP-Amps and how to integrate speakers into projects. Because I had no textbook knowledge of OP-Amps, this part was extremely difficult for me. This mainly had to do with the fact that I was really hesitant to buy electronic parts in bulk. Specifically, I needed a range of capacitors to operate the OP-Amp, but I just stuck to use one specific large catalytic capacitor. You might laugh since OP-Amps are basically operated on capacitors, but how the hell was I supposed to know back then?</p>
+		<p>Another difficulty was the speaker. The speaker caused me all sorts of problems. The SD card has to be formatted, the audio file also has to be formatted, the concept of OP-Amp operation, and the code to create digital PWM signals was difficult to understand. There were so many variables I didn't fully understand which complicated and lengthened the amount of time spent creating this project. But now I know what to expect when doing audio-based projects, so that's cool.</p>
 	</div>
 </div>
 
