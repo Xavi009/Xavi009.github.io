@@ -51,22 +51,16 @@
 		</div>
 	</div>
 	<div class="content-padding">
-		<div class="content-text">
-			<p>Ok. I already know what you're thinking; why did I even make this? Fair question. Let me provide some context.</p>
-			<p>At the start of 2020, the novel Coronavirus for some reason caused mass panic buying of toilet paper. Out of all things...toilet paper. I had this poop bucket idea for the longest time, but now more than ever my product needed to become a reality. The poop bucket efficiently wipes your ass by continuously using each square as opposed to using only a small dot of a toilet paper square using conventional wiping methods. The poop bucket also conveniently stores the used side onto another roll facing inwards, revealing a brand-new fresh side. This means that the poop bucket at least doubles the use per toilet paper roll, saving you money and time fighting over toilet paper at the store.</p>
-		</div>
+		<p>Ok. I already know what you're thinking; why did I even make this? Fair question. Let me provide some context.</p>
+		<p>At the start of 2020, the novel Coronavirus for some reason caused mass panic buying of toilet paper. Out of all things...toilet paper. I had this poop bucket idea for the longest time, but now more than ever my product needed to become a reality. The poop bucket efficiently wipes your ass by continuously using each square as opposed to using only a small dot of a toilet paper square using conventional wiping methods. The poop bucket also conveniently stores the used side onto another roll facing inwards, revealing a brand-new fresh side. This means that the poop bucket at least doubles the use per toilet paper roll, saving you money and time fighting over toilet paper at the store.</p>
 	</div>
 	<div class="content-padding">
 		<h1>How It Works</h1>
-		<div class="content-text">
 			<p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-		</div>
 	</div>
 	<div class="content-padding">
 		<h1>Design</h1>
-		<div class="content-text">
-			<p>The design is actually a lot more involved than you'd think. Traditionally, industrial toilet paper rollers use two motors on the rollers to properly tension the toilet paper material through its manufacturing stages. As the radius of one roll/roller increases, its angular speed is decreased. The opposite is true for the roll/roller that unravels its material. Sensors on the roller provide closed loop feedback to a controller that varies the speed of each roller, ensuring a constant tension. However, to properly tension the roll with only 1 motor, a minimum of 90&#176 angle bend is needed on a "dancer roller" (<a href="https://www.montalvo.com/article-library/accurate-consistent-tension-control-max-productivity-roll-roll-roll-sheet-process/" target="_blank">Source</a>).</p>
-		</div>
+		<p>Traditionally, industrial toilet paper rollers use two motors on the rollers to properly tension the toilet paper material through its manufacturing stages. As the radius of one roll/roller increases, its angular speed is decreased. The opposite is true for the roll/roller that unravels its material. Sensors on the roller provide closed loop feedback to a controller that varies the speed of each roller, ensuring a constant tension. However, to properly tension the roll with only 1 motor, a minimum of 90&#176 angle bend is needed on a "dancer roller" (<a href="https://www.montalvo.com/article-library/accurate-consistent-tension-control-max-productivity-roll-roll-roll-sheet-process/" target="_blank">Source</a>).</p>
 	</div>
 	<div class="w3-row">
 		<div class="w3-col l12 m12 s12">
@@ -75,46 +69,9 @@
 	</div>
 	<div class="content-padding">
 		<h1>Design</h1>
-		<div class="content-text">
-			<p>The design was created by importing .STL files of pre-existing TF2 sentry guns into Fusion 360 and scaling everything until one of the 28BYJ-48 ULN2003 stepper motors could fit within the main body of the sentry gun. Since most of the parts did not need to be modified, the original files were scaled and printed without modifications. The main body of the sentry gun, the holding piece, and the middle shaft were created from scratch to accommodate the stepper motor needed to motorize the sentry gun. Luckily the printers at the MakerSpace at UCLA are good at handling odd geometries so I didn't have to think too much about the "printability" of the parts I created. The case for the electronics was rather simple as there was plenty of space for the electronics, however, I added snap fit connections so the two base parts are easy to remove.</p>
-			<model-viewer src="files/sentry_gun/Sentry Gun.glb" shadow-intensity="2" auto-rotate camera-controls camera-orbit="135deg 50deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;"></model-viewer>
-			<p>Download the files on my <a href="https://www.thingiverse.com/thing:4751522" target="_blank">Thingiverse website</a>.</p>
-		</div>
-	</div>
-	<div class="content-padding">
-		<h1>Electronics</h1>
-		<div class="content-text">
-			<p>The electronics section can be simplified into 4 different sections that interface with the microcontroller (Arduino Nano in this case).</p>
-			<h3>1) Micro SD Card Module</h3>
-			<p>Interfaces a micro SD card with the Nano. The audio file is stored and accessed in the micro SD card. The audio file must be converted to a .WAV with 8 bit resolution, 16000 Hz sampling rate, and mono audio channels. Use <a href="https://audio.online-convert.com/convert-to-wav" target="_blank">this website</a> to convert audio files to the appropriate .WAV format.</p>
-			<h3>2) Stepper Motor</h3>
-			<p>This project uses a 28BYJ-48 stepper motor, a small four phase stepper motor that operates on common 5V.  The motor comes with a ULN2003 driver board to simplify the circuitry to the stepper motor itself. The code provided operates the sentry gun in full stepping as opposed to half stepping. Full stepping energizes one of the four phases at a given time whereas half stepping energizes two phases at a given time. Half stepping essentially doubles the amount of steps needed for a whole rotation but increases torque. Since torque doesn't matter for this application, full stepping was selected.</p>
-			<h3>3) Amplification and Audio</h3>
-			<p>In order to drive a simple 0.5W 8&#8486; speaker, the common LM386 OP-Amp was used. Since a speaker is essentially a generator, direct operation of the speaker to the Nano could cause damage as a reverse current can be generated by the speaker. The LM386 amplifies the digital PWM signals created by the Nano to amplify the sound coming from the speaker. A 10&micro;F capacitor across pins 1 and 8 of the LM386 amplifies the signal by 200. Without it, an amplification of 20 is achieved. Within the code, the Nano is only able to achieve an arbitrary "volume" of 4 out of a max of 7.</p>
-			<h3>4) Push Button</h3>
-			<p>This aspect of the project is simple. Simply ground the button on the same side as the probing pin and provide a 5V supply on the other side of the button. When the button is pressed, the 5V side will flow towards the probing pin rather than through the resistor, indicating the button has been pressed.</p>
-		</div>
-		<div class="w3-row">
-			<div class="w3-col l12 m12 s12">
-				<img class="image-gal" style="max-width: 100%;" src="pictures/sentry_gun/schematic.png">
-			</div>
-		</div>
-	</div>
-	<div class="content-padding">
-		<h1>Code</h1>
-		<p>Download the following libraries for the code to function:</p>
-		<ul>
-			<li><a href="files/sentry_gun/AccelStepper.zip" download>AccelStepper</a></li>
-			<li><a href="files/sentry_gun/TMRpcm-master.zip" download>TMRpcm</a></li>
-		</ul>
-		<script src="https://gist.github.com/Xavi009/e4e1167599049004d3fc921adfdc6531.js"></script>
-		<p>Access the GitHub <a href="https://github.com/Xavi009/tf2_sentry_gun_code" target="_blank"><b>here</b></a>.</p>
-	</div>
-	<div class="content-padding">
-		<h1>Context and Struggles</h1>
-		<p>Going into my first year of college, I had some experience with 3D printing and Arduino from self-exploration in high school, but not really that much. At one point in my first year, I got tired of not making anything and UCLA had really high-quality printers. So naturally, I started modelling the sentry gun and 3D printing the prototypes. I used pre-existing .STL models available online as a template, but I modified mine to be able to fit the electronics I wanted. The 3D printing prototype process was not new to me so this was easy. It was the electronics that gave me a hard time.</p>
-		<p>This project had a lot of firsts for me. I learned how to shrink my projects using Arduino Nanos instead of Unos. I also learned about OP-Amps and how to integrate speakers into projects. Because I had no textbook knowledge of OP-Amps, this part was extremely difficult for me. This mainly had to do with the fact that I was really hesitant to buy electronic parts in bulk. Specifically, I needed a range of capacitors to operate the OP-Amp, but I just stuck to use one specific large catalytic capacitor. You might laugh since OP-Amps are basically operated on capacitors, but how the hell was I supposed to know back then?</p>
-		<p>Another difficulty was the speaker. The speaker caused me all sorts of problems. The SD card has to be formatted, the audio file also has to be formatted, the concept of OP-Amp operation, and the code to create digital PWM signals was difficult to understand. There were so many variables I didn't fully understand which complicated and lengthened the amount of time spent creating this project. But now I know what to expect when doing audio-based projects, so that's cool.</p>
+		<p>The design was created by importing .STL files of pre-existing TF2 sentry guns into Fusion 360 and scaling everything until one of the 28BYJ-48 ULN2003 stepper motors could fit within the main body of the sentry gun. Since most of the parts did not need to be modified, the original files were scaled and printed without modifications. The main body of the sentry gun, the holding piece, and the middle shaft were created from scratch to accommodate the stepper motor needed to motorize the sentry gun. Luckily the printers at the MakerSpace at UCLA are good at handling odd geometries so I didn't have to think too much about the "printability" of the parts I created. The case for the electronics was rather simple as there was plenty of space for the electronics, however, I added snap fit connections so the two base parts are easy to remove.</p>
+		<model-viewer src="files/sentry_gun/Sentry Gun.glb" shadow-intensity="2" auto-rotate camera-controls camera-orbit="135deg 50deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;"></model-viewer>
+		<p>Download the files on my <a href="https://www.thingiverse.com/thing:4751522" target="_blank">Thingiverse website</a>.</p>
 	</div>
 </div>
 
