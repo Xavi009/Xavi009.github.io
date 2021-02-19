@@ -60,18 +60,27 @@
 	</div>
 	<div class="content-padding">
 		<h1>Design</h1>
+		<h2>Tensioning Principles</h2>
 		<p>Traditionally, industrial toilet paper rollers use two motors on the rollers to properly tension the toilet paper material through its manufacturing stages. As the radius of one roll/roller increases, its angular speed is decreased. The opposite is true for the roll/roller that unravels its material. Sensors on the roller provide closed loop feedback to a controller that varies the speed of each roller, ensuring a constant tension. However, to properly tension the roll with only 1 motor, a minimum of 90&#176 angle bend is needed on a "dancer roller" (<a href="https://www.montalvo.com/article-library/accurate-consistent-tension-control-max-productivity-roll-roll-roll-sheet-process/" target="_blank">Source</a>).</p>
-	</div>
-	<div class="w3-row">
-		<div class="w3-col l12 m12 s12">
-			<img class="image-gal" style="max-width: 100%;" src="pictures/poop_bucket/tension_diagram.png">
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 100%;" src="pictures/poop_bucket/tension_diagram.png">
+			</div>
 		</div>
-	</div>
-	<div class="content-padding">
-		<h1>Design</h1>
-		<p>The design was created by importing .STL files of pre-existing TF2 sentry guns into Fusion 360 and scaling everything until one of the 28BYJ-48 ULN2003 stepper motors could fit within the main body of the sentry gun. Since most of the parts did not need to be modified, the original files were scaled and printed without modifications. The main body of the sentry gun, the holding piece, and the middle shaft were created from scratch to accommodate the stepper motor needed to motorize the sentry gun. Luckily the printers at the MakerSpace at UCLA are good at handling odd geometries so I didn't have to think too much about the "printability" of the parts I created. The case for the electronics was rather simple as there was plenty of space for the electronics, however, I added snap fit connections so the two base parts are easy to remove.</p>
-		<model-viewer src="files/sentry_gun/Sentry Gun.glb" shadow-intensity="2" auto-rotate camera-controls camera-orbit="135deg 50deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;"></model-viewer>
-		<p>Download the files on my <a href="https://www.thingiverse.com/thing:4751522" target="_blank">Thingiverse website</a>.</p>
+		<p>The final dancer rollers in the model were a result of no research done prior to starting the project but were later adapted to have at least 90&#176 bends. The toilet paper is tensioned like so.</p>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 100%;" src="pictures/poop_bucket/roller_diagram.png">
+			</div>
+		</div>
+		<h2>Electronics Case and Panel</h2>
+		<p>The electronics enclosure was the trickiest part to create because it had to have a small profile that doesn't obstruct the user too much while housing all electronics in such a way that is easy to connect all wires. The electronics case was placed inside the bucket as opposed to inside since it looks cooler on the inside and it would have been tricky to account for exterior geometries of the bucket. Many iterations were done but the case that worked the best involved placing the battery at the bottom of the enclosure and having a rail system in which the attached circuit board slides into position. The circuit board is fastened into a sled system that is easy to remove by bending the exterior arms. It is important the electronics face upwards as this makes wiring easy between the peripherals and the circuit board.</p>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 100%;" src="pictures/poop_bucket/exploded_electronics.png">
+				<img class="image-gal" style="max-width: 100%;" src="pictures/poop_bucket/exploded_assembly.png">
+			</div>
+		</div>
 	</div>
 </div>
 
