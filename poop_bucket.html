@@ -45,14 +45,9 @@
 
 <!--Past Projects and Experience-->
 <div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
-	<div class="w3-row">
-		<div class="w3-col l12 m12 s12">
-			<img class="image-gal" style="max-width: 100%;" src="pictures/sentry_gun/demonstration_vid.gif">
-		</div>
-	</div>
-	
 	<div class="content-padding">
-		<p>Ok. I already know what you're thinking; why did I even make this? Fair question. Let me provide some context.</p>
+		<p><b>[Picture of Bucket]</b></p>
+		<p>Ok. I already know what you're thinking: why did I even make this? Fair question. Let me provide some context.</p>
 		<p>At the start of 2020, the novel Coronavirus for some reason caused mass panic buying of toilet paper. Out of all things...toilet paper. I had this poop bucket idea for the longest time, but now more than ever my product needed to become a reality. The poop bucket efficiently wipes your ass by continuously using each square as opposed to convential methods that only use a small area of the toilet paper. The poop bucket also conveniently stores the used side onto another roll facing inwards, revealing a brand-new fresh side. This means that the poop bucket at least doubles the use per toilet paper roll, saving you money and time fighting over toilet paper at the store.</p>
 	</div>
 
@@ -65,7 +60,8 @@
 			<li>Fade</li>
 		</ul>
 		<p>Once the desired lighting mode is selected, flipping the next switch turns on the motor, so you better hope your ass is in position. The included knob allows for control over the speed of the motor. Once done, simply turn off all switches and make waste of your waste.</p>
-		<p>[Include GIFs of knobs and switches]</p>
+		<p><b>[Include GIFs of knobs and switches]</b></p>
+		<iframe width="100%" height="479" src="https://www.youtube.com/embed/KKGyftdDWe8"allowfullscreen></iframe>
 	</div>
 
 	<div class="content-padding">
@@ -84,13 +80,19 @@
 			</div>
 		</div>
 		<h2>Electronics Case and Panel</h2>
-		<p>The electronics enclosure was the trickiest part to create because it had to be small, house all electronics, and make it easy to wire everything once all electronics were placed. The electronics case was placed inside the bucket as opposed to outside since it looks cooler on the inside and it would have been tricky to account for exterior geometries of the bucket. Many iterations were created but the case that worked the best involved placing the battery at the bottom of the enclosure and having a rail system in which the attached circuit board slides into position. The circuit board is fastened into a sled system that is easy to remove by bending the exterior arms. It is important the electronics face upwards as this makes wiring easy between the peripherals and the circuit board. Male header pins were soldered onto the circuit board to allow generic female jumper wires. Using male header pins instead of wires made the design more robust and easier to wire.</p>
 		<div class="w3-row">
 			<div class="w3-col l12 m12 s12">
-				<img class="image-gal" style="max-width: 80%;" src="pictures/poop_bucket/exploded_electronics.png">
-				<img class="image-gal" style="max-width: 90%;" src="pictures/poop_bucket/exploded_assembly.png">
+				<img class="image-gal" style="max-width: 70%;" src="pictures/poop_bucket/exploded_electronics.png">
 			</div>
 		</div>
+		<p>The electronics enclosure was the trickiest part to create because it had to be small, house all electronics, and make it easy to wire everything once all electronics were placed. The electronics case was placed inside the bucket as opposed to outside since it looks cooler on the inside and it would have been tricky to account for exterior geometries of the bucket. Many iterations were created but the case that worked the best involved placing the battery at the bottom of the enclosure and having a rail system in which the attached circuit board slides into position. The circuit board is fastened into a sled system that is easy to remove by bending the exterior arms. It is important the electronics face upwards as this makes wiring easy between the peripherals and the circuit board. Male header pins were soldered onto the circuit board to allow generic female jumper wires. Using male header pins instead of wires made the design more robust and easier to wire.</p>
+		<h2>Front Roller</h2>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 70%;" src="pictures/poop_bucket/exploded_electronics.png">
+			</div>
+		</div>
+		<p>The front roller is tasked with rotating the empty toilet paper roll to wipe the user's bum. The front roller must be "easy" to reload for repeated use. A system with springs was used. The front roller is composed of male and female semicircular cylinders. The internal cylinders house two springs which are hotglued on one side. When a toilet paper roll is placed outside of the two semicircular components, the outward force from the springs creates friction between the front roller and the cardboard roll. The friction causes the roll to move at the same speed as the motor and tension the system. To reload the system, simply squeeze the two components together and slide the empty roll over it.</p>
 	</div>
 
 	<div class="content-padding">
@@ -101,7 +103,7 @@
 			</div>
 		</div>
 		<p>The entire project is controlled by an Attiny85 microcontroller since it has the right number of pins for the project and is small. Electronic size was a huge factor in this project as the electronics compartment interferes with the user's ass. The microcontroller receives feedback from a temporary push button switch (button for lighting modes), potentiometer (knob for adjusting speed), and is powered by the 2 large switches. The push button and potentiometer are both grounded through resistors and powered using 5V logic. The DC motor used is a 50-rpm gear-reduced 12V motor. A 11.1V 3S LiPo battery is used to power all electronics. The nominal 11.1V from the LiPo is stepped down to 5V using a L7805 5V linear voltage regulator to power the microcontroller and sensors. The microcontroller is able to change the brightness and speed of the LEDs and motor using a method called pulse-width modulation (PWM). PWM essentially turns something on and off at for different amount of times within one duty-cycle and the average voltage value determines the "effective voltage" of something. The 5V PWM signal of the microcontroller is connected to an IRFZ44N MOSFET. This MOSFET acts like an electronic switch, allowing 11.1V from the battery to flow to the motors and LEDs using 5V from the microcontroller.</p>
-		<p>Access the GitHub code <a href="https://github.com/Xavi009/tf2_sentry_gun_code" target="_blank">WRONG</a>.</p>
+		<p>Access the GitHub code <a href="https://github.com/Xavi009/tf2_sentry_gun_code" target="_blank">WRONG LINK</a>.</p>
 	</div>
 	<div class="content-padding">
 		<h1>Concepts Learned and Struggles</h1>
