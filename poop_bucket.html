@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Javier Gomez: TF2 Sentry Gun</title>
+<title>Javier Gomez: Poop Bucket</title>
 <link rel="icon" type="image/png" href="pictures/fav-icon.png">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,18 +58,14 @@
 
 	<div class="content-padding">
 		<h1>How It Works</h1>
-		<p>The poop bucket allows users to poop and wipe their ass hands free into a bucket. The poop bucket is operated by first turning on the LED lights switch. This switch powers a set of LED strips as well as the Attiny85 microcontroller to receive button inputs and control the LEDs. Pressing the button switches between the 3 different lighting modes which are</p>
+		<p>The poop bucket allows users to poop and wipe their ass hands free into a bucket. The poop bucket is operated by first turning on the LED lights switch. This switch powers a set of LED strips as well as the Attiny85 microcontroller to receive button inputs and control the LEDs. Pressing the button switches between the 3 different lighting modes which are:</p>
 		<ul>
-			<li>ON</li>
-			<li>BLINK</li>
-			<li>FADE</li>
+			<li>On</li>
+			<li>Blink</li>
+			<li>Fade</li>
 		</ul>
 		<p>Once the desired lighting mode is selected, flipping the next switch turns on the motor, so you better hope your ass is in position. The included knob allows for control over the speed of the motor. Once done, simply turn off all switches and make waste of your waste.</p>
-		<div class="w3-row">
-			<div class="w3-col l12 m12 s12">
-				<img class="image-gal" style="max-width: 70%;" src="pictures/poop_bucket/tension_diagram.png">
-			</div>
-		</div>
+		<p>[Include GIFs of knobs and switches]</p>
 	</div>
 
 	<div class="content-padding">
@@ -88,7 +84,7 @@
 			</div>
 		</div>
 		<h2>Electronics Case and Panel</h2>
-		<p>The electronics enclosure was the trickiest part to create because it had to have a small profile that doesn't obstruct the user too much while housing all electronics in such a way that is easy to connect all wires. The electronics case was placed inside the bucket as opposed to inside since it looks cooler on the inside and it would have been tricky to account for exterior geometries of the bucket. Many iterations were done but the case that worked the best involved placing the battery at the bottom of the enclosure and having a rail system in which the attached circuit board slides into position. The circuit board is fastened into a sled system that is easy to remove by bending the exterior arms. It is important the electronics face upwards as this makes wiring easy between the peripherals and the circuit board.</p>
+		<p>The electronics enclosure was the trickiest part to create because it had to be small, house all electronics, and make it easy to wire everything once all electronics were placed. The electronics case was placed inside the bucket as opposed to outside since it looks cooler on the inside and it would have been tricky to account for exterior geometries of the bucket. Many iterations were created but the case that worked the best involved placing the battery at the bottom of the enclosure and having a rail system in which the attached circuit board slides into position. The circuit board is fastened into a sled system that is easy to remove by bending the exterior arms. It is important the electronics face upwards as this makes wiring easy between the peripherals and the circuit board. Male header pins were soldered onto the circuit board to allow generic female jumper wires. Using male header pins instead of wires made the design more robust and easier to wire.</p>
 		<div class="w3-row">
 			<div class="w3-col l12 m12 s12">
 				<img class="image-gal" style="max-width: 80%;" src="pictures/poop_bucket/exploded_electronics.png">
@@ -104,8 +100,24 @@
 				<img class="image-gal" style="max-width: 80%;" src="pictures/poop_bucket/schematic.png">
 			</div>
 		</div>
-		<p>The entire project is controlled by an Attiny85 microcontroller since it has the right number of pins for the project and is small. Electronic size was a huge factor in this project as the electronics compartment interferes with the user’s ass. The microcontroller receives feedback from a push button switch (button for lighting modes), potentiometer (knob for adjusting speed), and is powered by the 2 large switches. The push button and potentiometer are both grounded through resistors and powered using 5V logic. The DC motor used is a 50-rpm gear-reduced 12V motor. A 11.1V 3S LiPo battery is used to accommodate for the 12V LED strips, 12V high current motor, and 5V logical microcontroller and sensors. The nominal 11.1V from the LiPo is stepped down to 5V using a L7805 5V linear voltage regulator to power the microcontroller and sensors. The microcontroller is able to change the brightness and speed of the LEDs and motor using a method called pulse-width modulation (PWM). PWM essentially turns something on and off at for different amount of times within one duty-cycle and the average voltage value determines the “effective voltage” of something. The 5V PWM signal of the microcontroller is connected to an IRFZ44N MOSFET, which is switched on by lower 5V signal. Every time a 5V signal is sent to the gate of the MOSFET, the 11.1V can flow to the LED or motor.</p>
+		<p>The entire project is controlled by an Attiny85 microcontroller since it has the right number of pins for the project and is small. Electronic size was a huge factor in this project as the electronics compartment interferes with the user's ass. The microcontroller receives feedback from a temporary push button switch (button for lighting modes), potentiometer (knob for adjusting speed), and is powered by the 2 large switches. The push button and potentiometer are both grounded through resistors and powered using 5V logic. The DC motor used is a 50-rpm gear-reduced 12V motor. A 11.1V 3S LiPo battery is used to power all electronics. The nominal 11.1V from the LiPo is stepped down to 5V using a L7805 5V linear voltage regulator to power the microcontroller and sensors. The microcontroller is able to change the brightness and speed of the LEDs and motor using a method called pulse-width modulation (PWM). PWM essentially turns something on and off at for different amount of times within one duty-cycle and the average voltage value determines the "effective voltage" of something. The 5V PWM signal of the microcontroller is connected to an IRFZ44N MOSFET. This MOSFET acts like an electronic switch, allowing 11.1V from the battery to flow to the motors and LEDs using 5V from the microcontroller.</p>
+		<p>Access the GitHub code <a href="https://github.com/Xavi009/tf2_sentry_gun_code" target="_blank">WRONG</a>.</p>
 	</div>
+	<div class="content-padding">
+		<h1>Concepts Learned and Struggles</h1>
+		<p>This project was a fun one since I applied many electrical concepts I've learned in class and I learned many practical skills. The new things I did in this project were:</p>
+		<ul>
+			<li>Stepping down voltages and powering different voltage devices using a single battery</li>
+			<li>Using LiPo batteries</li>
+			<li>Creating prototype circuit boards using perfboards</li>
+			<li>Using MOSFETs</li>
+			<li>Using a "flyback" diode parallel to DC motor</li>
+		</ul>
+		<p>The main thing that made this project take about a month longer than expected is soldering and wiring everything to the perfboard. I had a working prototype on a breadboard but translating everything onto the perfboard was not as easy. For starters, one of the MOSFETs decided to not work anymore and that took a long time to troubleshoot. I thought it was my wiring and potential unwanted connections between a voltage source and ground. Once that was painfully replaced, another issue was creating ports so that electronic peropherals could attach to the perfboard. My first idea was to cut male-to-female jumper wires in half to have matching female and male tips. This was a problem because the halves that were soldered to the perfboard kept ripping, making it a very tedious process to resolder everything. The final design implmented male header pins which dont rip because they aren't wires.</p>
+		<p>The other issue with the electronics box was figuring out the orientation of the perfboard. The initial design slid the board vertically which made wiring really hard. It took a while for me to connect my two braincells and change the orientation of the board to face upwards to make wiring easier.</p>
+		<p>All in all, this was a good project for learning wiring and shrinking complex Arduino projects into a single perfboard.</p>
+	</div>
+
 </div>
 
 
