@@ -36,35 +36,39 @@
 	<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
 </div>
 
-<!--Header-->
+<!-------Header------->
 <div class="w3-light-grey">
 	<div class="w3-content w3-container" style="max-width:1200px; padding-top: 90px; padding-bottom: 90px;">
 		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="personal_projects.html" class="text-ref">Personal Projects</a><i class="material-icons">arrow_forward</i><a class="text-ref" href="tf2_sentry_gun.html">TF2 Sentry Gun</a></h1>
 	</div>
 </div>
 
-<!--Past Projects and Experience-->
+<!-------Content------->
 <div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
 	<div class="w3-row">
 		<div class="w3-col l12 m12 s12">
 			<img class="image-gal" style="max-width: 100%;" src="pictures/sentry_gun/demonstration_vid.gif">
 		</div>
 	</div>
+
 	<div class="content-padding">
 		<p>Let's get one thing straight...I've played way too much Team Fortress 2 (TF2). I guess you can say I love this game. One of the playable characters is the Engineer, who is able to make the iconic sentry gun. The sentry gun's purpose is to automatically track and shoot enemies if they're within the field of range of the gun. If there is no enemy, the sentry gun scans back and forth until an enemy comes into view. Many dweebs (myself included) have been inspired by the possibility of making this virtual object into a working reality. My rendition of the sentry gun excludes the tracking and shooting portion and only scans back and forth while making the iconic sounds. I wanted to make a sentry gun that could fit on my desk and move like in the game.</p>
 	</div>
+
 	<div class="content-padding">
 		<h1>How It Works</h1>
 		<p>The desktop sentry gun works by plugging in the attached USB cable to a 5V USB adapter. This will power the sentry gun. Make sure that the sentry gun's "head" is aligned prior to plugging in the cable. The program references this initial position as the equidistant point for its operation. And done!</p>
 		<p>If you want to stop operation of the sentry gun, press the button prior to unplugging it. This will cause the sentry gun to go back to its center position and hold that position for ~6 seconds. Once it's stationary, you can unplug the USB cable.</p>
 		<iframe width="100%" height="479" src="https://www.youtube.com/embed/dPrOoYUjC_o"allowfullscreen></iframe>
 	</div>
+
 	<div class="content-padding">
 		<h1>Design</h1>
 		<p>The design was created by importing .STL files of pre-existing TF2 sentry guns into Fusion 360 and scaling everything until one of the 28BYJ-48 ULN2003 stepper motors could fit within the main body of the sentry gun. Since most of the parts did not need to be modified, the original files were scaled and printed without modifications. The main body of the sentry gun, the holding piece, and the middle shaft were created from scratch to accommodate the stepper motor needed to motorize the sentry gun. Luckily the printers at the MakerSpace at UCLA are good at handling odd geometries so I didn't have to think too much about the "printability" of the parts I created. The case for the electronics was rather simple as there was plenty of space for the electronics, however, I added snap fit connections so the two base parts are easy to remove.</p>
 		<model-viewer src="files/sentry_gun/Sentry Gun.glb" shadow-intensity="2" auto-rotate camera-controls camera-orbit="135deg 50deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;"></model-viewer>
 		<p>Download the files on my <a href="https://www.thingiverse.com/thing:4751522" target="_blank">Thingiverse website</a>.</p>
 	</div>
+
 	<div class="content-padding">
 		<h1>Electronics</h1>
 		<p>The electronics section can be simplified into 4 different sections that interface with the microcontroller (Arduino Nano in this case).</p>
@@ -82,6 +86,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="content-padding">
 		<h1>Code</h1>
 		<p>Download the following libraries for the code to function:</p>
@@ -92,6 +97,7 @@
 		<script src="https://gist.github.com/Xavi009/e4e1167599049004d3fc921adfdc6531.js"></script>
 		<p>Access the GitHub <a href="https://github.com/Xavi009/tf2_sentry_gun_code" target="_blank"><b>here</b></a>.</p>
 	</div>
+	
 	<div class="content-padding">
 		<h1>Context and Struggles</h1>
 		<p>Going into my first year of college, I had some experience with 3D printing and Arduino from self-exploration in high school, but not really that much. At one point in my first year, I got tired of not making anything and UCLA had really high-quality printers. So naturally, I started modelling the sentry gun and 3D printing the prototypes. I used pre-existing .STL models available online as a template, but I modified mine to be able to fit the electronics I wanted. The 3D printing prototype process was not new to me so this was easy. It was the electronics that gave me a hard time.</p>
