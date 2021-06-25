@@ -47,9 +47,10 @@
 
 <!--Content-->
 <div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
+	
 	<div class="content-padding">
 		<h1>What is this?</h1>
-		<p>Every year, NASA’s Wisconsin Space Grant Consortium (WSGC) hosts the annual First Nations Launch (FNL) National Rocket Competition.  This competition is an opportunity for students attending a Tribal College or University, or who are members of a campus AISES chapter, to design, build, and fly a rocket to be launched at a competition at the Richard Bong State Recreational Area in Kansasville, WI. The competition requires teams of undergraduate students to conceive, design, fabricate, and compete with high-powered rockets.</p>
+		<p>Every year, NASA's Wisconsin Space Grant Consortium (WSGC) hosts the annual First Nations Launch (FNL) National Rocket Competition.  This competition is an opportunity for students attending a Tribal College or University, or who are members of a campus AISES chapter, to design, build, and fly a rocket to be launched at a competition at the Richard Bong State Recreational Area in Kansasville, WI. The competition requires teams of undergraduate students to conceive, design, fabricate, and compete with high-powered rockets.</p>
 		<table class="w3-table w3-border w3-bordered">
 			<tr>
 				<th>General Engineering Parameters</th>
@@ -66,7 +67,7 @@
 					<ul>
 						<li>The rocket must be fin-stabilized with a static margin of one or greater</li>
 						<li>The rocket is required to use a commercial electronic deployment recovery system (Altimeter)</li>
-						<li>The electronic recovery system must deploy a drogue chute at apogee and a main chute at a specified height for a “Safe Flight Mission”</li>
+						<li>The electronic recovery system must deploy a drogue chute at apogee and a main chute at a specified height for a "Safe Flight Mission"</li>
 						<li>Teams that come closest to their predicted apogee based on their prediction stated on the final report will gain points for the flight performance portion of the competition</li>
 					</ul>
 				</td>
@@ -85,9 +86,10 @@
 		<h1>My Role</h1>
 		<p>As the electronics lead, my main tasks were to ensure dual deployment occurred during flight and to satisfy the challenge portion of the competition. To efficiently use space in the rocket, all electronics were centralized into one electronics bay (a combination of the payload and avionics bay). For this reason, I was also tasked with designing and manufacturing a locking mechanism/bulkhead and an avionics sled to neatly house all electronics. Additionally, I hosted two Arduino workshops to teach incoming freshman hardware programming and peak club interest. The logistics of the general rocket design, financing, consolidating reports, and general management were handled by other leads.</p>
 	</div>
+
 	<div class="content-padding">
 		<h1>The Locking Mechanism and Sled</h1>
-		<p>The locking mechanism and sled attached the electronics to the rocket. The locking mechanism consisted of 2 main components (the outer and inner ring). The outer ring is epoxied to the body tube of the rocket and is shaped so that the inner ring can slide and lock into place. The sled, which snugly contains all electronics, is epoxied onto the inner ring of the locking mechanism. The inner ring also has an “eye-bolt” drilled in to fasten the shock cord to the rocket. Each ring was made using 2 layers of 0.75in thick pinewood which were CNC’d to the appropriate dimensions. The outer diameter of the outer ring was 3.8in to snugly fit into the 4in body tube. Originally, a rubber sheet was going to be attached on top of the inner ring to provide an airtight seal, but a lack of communication between me and team member scrapped the idea.</p>
+		<p>The locking mechanism and sled attached the electronics to the rocket. The locking mechanism consisted of 2 main components (the outer and inner ring). The outer ring is epoxied to the body tube of the rocket and is shaped so that the inner ring can slide and lock into place. The sled, which snugly contains all electronics, is epoxied onto the inner ring of the locking mechanism. The inner ring also has an "eye-bolt" drilled in to fasten the shock cord to the rocket. Each ring was made using 2 layers of 0.75in thick pinewood which were CNC'd to the appropriate dimensions. The outer diameter of the outer ring was 3.8in to snugly fit into the 4in body tube. Originally, a rubber sheet was going to be attached on top of the inner ring to provide an airtight seal, but a lack of communication between me and team member scrapped the idea.</p>
 		<p>The sled of the avionics bay was the most problematic since it was a matter of space management and prototyping. The sled features a 10.9in long T-Shape 3D printed fitting with a flat end for increased surface area and  adhesion to the inner ring. The sled fits 2 altimeters, 3 9V batteries, an Arduino Uno, an MPU6050, and a BMP180 module. The 9V batteries are enclosed with custom made 9V battery holders. Due to space limitations, the Arduino Uno had to have its standard rails desoldered and all connections were soldered directly to the board. The MPU6050 and BMP180 were located on the opposite side of the Arduino Uno, so cable management was essential.</p>
 		<div class="w3-container">
 			<div class="w3-row">
@@ -136,7 +138,7 @@
 
 		<h2>Acquiring Data</h2>
 		video/gif of real-time data
-		<p>After launch, various data points were obtained and were exported onto an SD Card. Since data types were delineated by a comma, data could be separated in excel for analysis. Unfortunately, since both data modules were controlled using the same two pins, data gathering was not fast enough for a high speed launch. Additionally, turbulence during the flight rendered the MPU6050 useless due to the module’s high sensitivity. The following graphs display clear trends for data types gathered by the BMP180, but not the MPU6050. Due to lack of time, the MPU6050 was taped onto the avionics sled, which meant the XYZ-axis were not centered properly, so G-force values are incorrect.</p>
+		<p>After launch, various data points were obtained and were exported onto an SD Card. Since data types were delineated by a comma, data could be separated in excel for analysis. Unfortunately, since both data modules were controlled using the same two pins, data gathering was not fast enough for a high speed launch. Additionally, turbulence during the flight rendered the MPU6050 useless due to the module's high sensitivity. The following graphs display clear trends for data types gathered by the BMP180, but not the MPU6050. Due to lack of time, the MPU6050 was taped onto the avionics sled, which meant the XYZ-axis were not centered properly, so G-force values are incorrect.</p>
 		<div class="w3-container">
 			<div class="w3-row">
 				<div class="w3-col l4 m6 s12">
