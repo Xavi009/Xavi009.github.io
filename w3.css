@@ -205,12 +205,69 @@ body, html {
 }
 
 
+/*Block Diagram*/
+.diagram {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    align-items: start;
+    justify-items: center;
+    max-width: 7in;
+    margin: .2in 0;
+}
+.diagram > div {
+  padding: 12px;
+  background: #EEE;
+  border: 1px solid #C0C0C0;
+}
+.diagram > .component {
+  border-radius: 12px;
+  background: #E6E0FF;
+  border: 2px solid #8E8EFF;
+}
+.raw-data-client {
+  grid-column: 1/span 5;
+  grid-row: 1;
+}
+.pivot-engine {
+  grid-column: 4/span 5;
+  grid-row: 3;
+}
+.row-2 {
+  grid-row: 2;
+}
+.row-3 {
+  grid-row: 3;
+}
+.col-4 {
+  grid-column: 4;
+}
+.col-8 {
+  grid-column: 8;
+}
+.diagram .conn {
+  position: relative;
+  width: .5in;
+  height: .5in;
+  padding: 0;
+  border: none;
+  background: transparent;
+  z-index: -1;
+}
+.diagram .conn svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: #E6E0FF;
+}
+
+
+
+
 /*Model Stuff*/
 model-viewer {
   width: 100%;
 }
-
-
 
 
 .collapsible {
