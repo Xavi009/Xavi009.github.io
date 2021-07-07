@@ -148,7 +148,7 @@ body, html {
 	padding: 10px;
 }
 .image-gal{
-	max-width: 100%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	margin: auto;
@@ -222,6 +222,23 @@ body, html {
 .block-and-svg{
 	display: flex;
 	align-items: center;
+}
+
+@media screen and (max-width: 675px){
+	.w3-row{
+		flex-wrap: wrap;
+	}
+	.w3-col.block {
+		padding: 10px;
+		width: 100%;
+	}
+	.w3-col.svg {
+		width: 100%;
+	}
+	.block-and-svg{
+		display: flex;
+		align-items: center;
+	}
 }
 
 
