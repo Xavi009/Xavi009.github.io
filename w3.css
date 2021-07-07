@@ -206,7 +206,23 @@ body, html {
 
 
 /*Block Diagram*/
-
+.w3-col.block {
+	background-color: #bbe693;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 15px;
+	padding: 10px;
+	text-align: center;
+	width: 16%;
+}
+.w3-col.svg {
+	width: 5%;
+}
+.block-and-svg{
+	display: flex;
+	align-items: center;
+}
 
 
 
