@@ -219,6 +219,9 @@ body, html {
 .w3-col.svg {
 	width: 5%;
 }
+.svg svg path{
+	d: path('M20 5 L15 8 L15 6 L0 6 L0 4 L15 4 L15 2z');
+}
 .block-and-svg{
 	display: flex;
 	align-items: center;
@@ -233,7 +236,14 @@ body, html {
 		width: 100%;
 	}
 	.w3-col.svg {
-		width: 100%;
+		max-width: 100%;
+	}
+	/*
+	.svg svg {
+		viewBox:  0 0 8 20;
+	}*/
+	.svg svg path{
+		d: path('M5 20 L8 15 L6 15 L6 0 L4 0 L4 15 L2 15z');
 	}
 	.block-and-svg{
 		display: flex;
