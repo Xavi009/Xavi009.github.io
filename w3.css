@@ -225,6 +225,8 @@ body, html {
 .block-and-svg{
 	display: flex;
 	align-items: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 @media screen and (max-width: 675px){
