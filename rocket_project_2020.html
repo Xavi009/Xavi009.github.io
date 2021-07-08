@@ -143,30 +143,30 @@
 		</ol>
 
 		<h3>REA</h3>
-		<div class="w3-row block-and-svg" id="large_block_diagram">
+		<div class="w3-row block-and-svg">
 			<div class="w3-col block">
 				<p>Calibration</p>
 			</div>
 			<div class="w3-col svg">
-				<svg viewBox="0 0 20 8"><path/></svg>
+				<svg id="large_block_diagram"><path/></svg>
 			</div>
 			<div class="w3-col block">
 				<p>Apogee</p>
 			</div>
 			<div class="w3-col svg">
-				<svg viewBox="0 0 20 8"><path/></svg>
+				<svg id="large_block_diagram"><path/></svg>
 			</div>
 			<div class="w3-col block">
 				<p>Landing</p>
 			</div>
 			<div class="w3-col svg">
-				<svg viewBox="0 0 20 8"><path/></svg>
+				<svg id="large_block_diagram"><path/></svg>
 			</div>
 			<div class="w3-col block">
 				<p>Orient</p>
 			</div>
 			<div class="w3-col svg">
-				<svg viewBox="0 0 8 20"><path/></svg>
+				<svg id="large_block_diagram"><path/></svg>
 			</div>
 			<div class="w3-col block">
 				<p>Deploy</p>
@@ -207,6 +207,22 @@ function myFunction2() {
   } else { 
     x.className = x.className.replace(" w3-show", "");
   }
+}
+
+window.onresize = window.onload =  function() {
+    var width = window.innerWidth;
+    var elms = document.querySelectorAll("[id='large_block_diagram']");
+
+    if (width <= 675){
+    	for(var i = 0; i < elms.length; i++){
+    		elms[i].setAttribute("viewBox", "0 0 8 20");
+    	}
+    }
+    else{
+    	for(var i = 0; i < elms.length; i++){
+    		elms[i].setAttribute("viewBox", "0 0 20 8");
+    	}
+    }
 }
 </script>
 </html>
