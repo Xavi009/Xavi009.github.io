@@ -204,8 +204,12 @@ body, html {
    width: 100%;
 }
 
+.table-text-center {
+	text-align: center; vertical-align: middle;
+}
 
-/*Block Diagram*/
+
+/*Block Diagram for Rocket 2020*/
 .w3-col.block {
 	background-color: #bbe693;
 	border-style: solid;
@@ -241,10 +245,6 @@ body, html {
 		max-width: 100%;
 		margin: auto;
 	}
-	/*
-	.svg svg {
-		viewBox:  0 0 8 20;
-	}*/
 	.svg svg path{
 		d: path('M5 20 L8 15 L6 15 L6 0 L4 0 L4 15 L2 15z');
 	}

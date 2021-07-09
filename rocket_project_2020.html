@@ -7,6 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--MathJax-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
 <!--Navbar-->
@@ -228,17 +231,131 @@
 			</ul>
 		</div>
 		<p>The following is a schematic of all REA electronics.</p>
-		<div class="w3-row">
-			<div class="w3-col l12 m12 s12">
+		<div class="w3-row"><div class="w3-col l12 m12 s12">
 				<img class="image-gal" style="max-width: 650px;" src="pictures/rocket20/REA Schematic.svg">
-			</div>
-		</div>
+		</div></div>
 		
 
 
 
 		<h3>2.2.2. Rover</h3>
-		<h3>2.2.3. Altimeters & GPS</h3>
+		<p>Rover electronics were selected from commercially available drone parts for their small form factor, compatibility with well known components, and high-powered RF capabilities. An Arduino Uno is much larger than the selected flight controller used which made this option an attractive one. This ended up being a huge mistake as the team was not able to program the system to better fit the team’s needs. A better solution would be to use dual in-line package (DIP) chip microcontrollers and wire all necessary peripherals and components to a perfboard. This would allow greater control over the designed system in terms of hardware and software while remaining relatively small enough to fit within the payload.</p>
+		<p>Nonetheless, the selected components and schematic are presented below.</p>
+		<table class="w3-table-all" style="border-collapse: collapse;">
+			<tr>
+				<th>Subsystem</th>
+				<th>Component</th>
+				<th>Purpose</th>
+				<th>Quantity</th>
+			</tr>
+			<tr>
+				<td rowspan="2" style="background-color: #f7f4d7; text-align: center; vertical-align: middle;">Inputs</td>
+				<td>Radiolink 2.4GHz Tx</td>
+				<td>Transmits PWM inputs from the team to the rover.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+			<tr>
+				<td>Radiolink 2.4GHz Rx</td>
+				<td>Receives PWM inputs from the team.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+			<tr>
+				<td rowspan="4" style="background-color:#dff7d7; text-align: center; vertical-align: middle;">Video</td>
+				<td>Furious FPV 2.4GHz VTx</td>
+				<td>Processes video feedback and transmits from the rover to the team.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+			<tr>
+				<td>BosCam 2.4GHz VRx</td>
+				<td>Receives video feedback from the rover. Outputs composite video feedback.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+			<tr>
+				<td>2.4GHz SMA Antenna (RHCP)</td>
+				<td>Equally polarized omnidirectional antennas for VTx and VRx. Polarization prevents interference from other teams.</td>
+				<td style="text-align: center; vertical-align: middle;">2</td>
+			</tr>
+			<tr>
+				<td>120&#176; NTSC Mini FPV Camera</td>
+				<td>Camera for recording. Sends inputs to VTx.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+			<tr>
+				<td style="background-color:#f7d9d7; text-align: center; vertical-align: middle;">Controller</td>
+				<td>OpenPilot CC3D Evo Flight Controller</td>
+				<td>Controls motors via ESC’s and PWM signals. Receives PWM inputs from Rx.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+			<tr>
+				<td rowspan="2" style="background-color:#d7ecf7; text-align: center; vertical-align: middle;">Motors</td>
+				<td>Racestar BR2212 Brushless DC Motor</td>
+				<td>Driving motors. Controlled by ESC.</td>
+				<td style="text-align: center; vertical-align: middle;">4</td>
+			</tr>
+			<tr>
+				<td>Micro High Torque Servo</td>
+				<td>Servo motor for controlling collection arm. Receives PWM inputs.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+			<tr>
+				<td rowspan="3" style="background-color:#ddd7f7; text-align: center; vertical-align: middle;">Power</td>
+				<td>HobbyMate XT60 PDB</td>
+				<td>Power Distribution Board. Distributes 11.1V to motors and VTx and steps down voltage for other components.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+			<tr>
+				<td>25A Lumenier 4-in-1 ESC</td>
+				<td>Electronic Speed Controller. Includes H-Bridges and MOSFETs to easily control DC motors.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+			<tr>
+				<td>11.1V 3S 4000mAh 50C LiPo</td>
+				<td>Powers all components.</td>
+				<td style="text-align: center; vertical-align: middle;">1</td>
+			</tr>
+		</table>
+		<div class="w3-row"><div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 700px;" src="pictures/rocket20/Rover Schematic.svg">
+		</div></div>
+
+
+
+		<h3>2.2.3. Verification & Testing</h3>
+		<p>One of the main concerns of the rover electronics was establishing RF connection through an impermeable surface, such as carbon fiber from the body tube, that could reach a range of 0.5 miles (launch field is 2500 ft in radius). Prior to testing the Tx/Rx and VTx/VRx pairs, the ability of the selected electronics to accomplish a minimum 0.5 mile radius was verified using the Friis Transmission Equation shown below:</p>
+		<p>$$P_R= {P_T\ G_T\ G_R\ c^2} \over {(4\pi Rf)}^2 $$</p>
+		<p>Where <i>P<sub>R</sub></i> is the received power in W, <i>P<sub>T</sub></i> is the power of the transmitter in W, <i>G<sub>T</sub></i> and <i>G<sub>R</sub></i> are the antenna gains of the transmitter and receiver respectively in dBi, <i>c</i> is the speed of light in m/s, <i>R</i> is the antenna separation in m, and <i>f</i> is the frequency in Hz. This equation assumes both antennas are in free space (i.e. no obstructions nearby).</p>
+		<p>For the following calculations, both the transmitter and receiver will use the same TrueRC Singularity RHCP 2.4GHz antenna with a gain of 1.6dBi. Since the antennas are all the same polarization (RHCP), there is no need to consider the polarization loss factor. The desired radius is 0.5 miles which is ~804.7 meters. The sensitivity of each receiver is the minimum gain needed to fully receive a signal. A gain higher than that of the sensitivity indicates a successful transmission. Relevant transmitter and receiver parameters are tabulated below. Unit converions were made outside of the scope of the formula.</p>
+		<table class="w3-table-all">
+			<tr>
+				<th>System Pair</th>
+				<th><i>P<sub>T</sub></i> (W)</th>
+				<th><i>G<sub>T</sub></i> (dBi)</th>
+				<th><i>G<sub>R</sub></i> (dBi)</th>
+				<th>Sensitivity (dBm)</th>
+				<th>Expected <i>P<sub>R</sub></i> (dBm)</th>
+			</tr>
+			<tr>
+				<td>Tx/Rx</td>
+				<td>0.1</td>
+				<td>1.6</td>
+				<td>1.6</td>
+				<td>-104</td>
+				<td>-74.94</td>
+			</tr>
+			<tr>
+				<td>VTx/VRx</td>
+				<td>0.2</td>
+				<td>1.6</td>
+				<td>1.6</td>
+				<td>-90</td>
+				<td>-71.94</td>
+			</tr>
+		</table>
+
+
+
+
+		<h3>2.2.4. Altimeters & GPS</h3>
 		<h2>2.3. Locking Mechanism</h2>
 		<h2>2.4. Reports & Presentations</h2>
 		<h2>2.5. Subscale & Full Scale Launches</h2>
