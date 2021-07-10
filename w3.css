@@ -258,8 +258,6 @@ body, html {
 .general-table tr:nth-child(odd){background-color:#f1f1f1} .general-table tr:nth-child(even){background-color:#fff}
 .general-table th{padding:8px 8px; display:table-cell; text-align:center; vertical-align:top;border-bottom: 1px solid #ccc;background-color: #ccc;}
 .general-table td{padding:8px 8px; display:table-cell; text-align:left; vertical-align:top}
-.general-table td, .general-table th{border-left: 1px solid #ccc;}
-.bruh{}
 .general-table.no-stripe tr:nth-child(odd){background-color:#fff} .general-table.no-stripe tr:nth-child(even){background-color:#fff}
 
 
