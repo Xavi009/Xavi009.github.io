@@ -262,7 +262,7 @@ body, html {
 .general-table.no-stripe tr:nth-child(odd){background-color:#fff} .general-table.no-stripe tr:nth-child(even){background-color:#fff}
 .general-table-center {vertical-align: middle; text-align: center;}
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 570px){
 	.general-table{font-size: 10px;}
 	.general-table th{padding:4px 4px;}
 	.general-table td{padding:4px 4px;}
