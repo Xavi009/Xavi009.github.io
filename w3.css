@@ -264,6 +264,8 @@ body, html {
 
 @media screen and (max-width: 675px){
 	.general-table{font-size: 12px;}
+	.general-table th{padding:4px 4px;}
+	.general-table td{padding:4px 4px;}
 }
 
 
