@@ -151,43 +151,43 @@
 		<table class="general-table">
 			<tr>
 				<th>Component</th>
-				<th style="text-align: center;">Purpose</th>
+				<th>Purpose</th>
 				<th>Quantity</th>
 			</tr>
 			<tr>
-				<td>Arduino Uno</td>
+				<td style="vertical-align:middle;">Arduino Uno</td>
 				<td>Microcontroller. Reads data from pressure sensor and accelerometer/gyroscope modules and control stepper motor driver.</td>
-				<td style="text-align: center;">1</td>
+				<td style="text-align: center; vertical-align:middle;">1</td>
 			</tr>
 			<tr>
-				<td>BMP180</td>
+				<td style="vertical-align:middle;">BMP180</td>
 				<td>Barometric pressure sensor (BMP). Sends pressure data to microcontroller to measure current altitude of the launch vehicle.</td>
-				<td style="text-align: center;">1</td>
+				<td style="text-align: center; vertical-align:middle;">1</td>
 			</tr>
 			<tr>
-				<td>MPU-6050</td>
+				<td style="vertical-align:middle;">MPU-6050</td>
 				<td>Accelerometer/gyroscope sensor (6DOF). Records translational acceleration and rotational velocity. Used to provide positional feedback of REA’s rotating block.</td>
-				<td style="text-align: center;">1</td>
+				<td style="text-align: center; vertical-align:middle;">1</td>
 			</tr>
 			<tr>
-				<td>A4988</td>
+				<td style="vertical-align:middle;">A4988</td>
 				<td>Stepper motor driver module. Regulates current supplied to stepper motors and simplify wiring and coding of Arduino with stepper motor.</td>
-				<td style="text-align: center;">2</td>
+				<td style="text-align: center; vertical-align:middle;">2</td>
 			</tr>
 			<tr>
-				<td>NEMA 17 Stepper Motor</td>
+				<td style="vertical-align:middle;">NEMA 17 Stepper Motor</td>
 				<td>Stepper motor. Rotates REA rotating block and lead screw with high torque and precision.</td>
-				<td style="text-align: center;">2</td>
+				<td style="text-align: center; vertical-align:middle;">2</td>
 			</tr>
 			<tr>
-				<td>3S 700mAh LiPo</td>
+				<td style="vertical-align:middle;">3S 700mAh LiPo</td>
 				<td>Power supply for stepper motors. Stepper motors require high voltage and discharge rates to operate, all which LiPos can do.</td>
-				<td style="text-align: center;">1</td>
+				<td style="text-align: center; vertical-align:middle;">1</td>
 			</tr>
 			<tr>
-				<td>9V Alkaline Battery</td>
+				<td style="vertical-align:middle;">9V Alkaline Battery</td>
 				<td>Logic power supply for Arduino Uno and its peripherals.</td>
-				<td style="text-align: center;">1</td>
+				<td style="text-align: center; vertical-align:middle;">1</td>
 			</tr>
 		</table>
 		<p>Since the rover must be autonomously deployed, the Arduino microcontroller must be able to identify when a touchdown event has occurred after launch. The BMP and accelerometer/gyroscope modules help the Arduino Uno decide when to deploy. The following flow chart illustrates the steps taken by the Arduino Uno for safe deployment.</p>
@@ -258,10 +258,10 @@
 				<td style="text-align: center; vertical-align: middle;">1</td>
 			</tr>
 			<tr>
-				<td rowspan="4" style="background-color:#dff7d7; text-align: center; vertical-align: middle;">Video</td>
-				<td>Furious FPV 2.4GHz VTx</td>
-				<td>Processes video feedback and transmits from the rover to the team.</td>
-				<td style="text-align: center; vertical-align: middle;">1</td>
+				<td rowspan="4" style="background-color:#dff7d7; text-align: center; vertical-align: middle;border-top: 2px solid #ccc;">Video</td>
+				<td style="border-top: 2px solid #ccc;">Furious FPV 2.4GHz VTx</td>
+				<td style="border-top: 2px solid #ccc;">Processes video feedback and transmits from the rover to the team.</td>
+				<td style="text-align: center; vertical-align: middle; border-top: 2px solid #ccc;">1</td>
 			</tr>
 			<tr>
 				<td>BosCam 2.4GHz VRx</td>
@@ -279,16 +279,16 @@
 				<td style="text-align: center; vertical-align: middle;">1</td>
 			</tr>
 			<tr>
-				<td style="background-color:#f7d9d7; text-align: center; vertical-align: middle;">Controller</td>
-				<td>OpenPilot CC3D Evo Flight Controller</td>
-				<td>Controls motors via ESC’s and PWM signals. Receives PWM inputs from Rx.</td>
-				<td style="text-align: center; vertical-align: middle;">1</td>
+				<td style="background-color:#f7d9d7; text-align: center; vertical-align: middle; border-top: 2px solid #ccc;">Controller</td>
+				<td style="border-top: 2px solid #ccc;">OpenPilot CC3D Evo Flight Controller</td>
+				<td style="border-top: 2px solid #ccc;">Controls motors via ESC’s and PWM signals. Receives PWM inputs from Rx.</td>
+				<td style="text-align: center; vertical-align: middle; border-top: 2px solid #ccc;">1</td>
 			</tr>
 			<tr>
-				<td rowspan="2" style="background-color:#d7ecf7; text-align: center; vertical-align: middle;">Motors</td>
-				<td>Racestar BR2212 Brushless DC Motor</td>
-				<td>Driving motors. Controlled by ESC.</td>
-				<td style="text-align: center; vertical-align: middle;">4</td>
+				<td rowspan="2" style="background-color:#d7ecf7; text-align: center; vertical-align: middle; border-top: 2px solid #ccc;">Motors</td>
+				<td style="border-top: 2px solid #ccc;">Racestar BR2212 Brushless DC Motor</td>
+				<td style="border-top: 2px solid #ccc;">Driving motors. Controlled by ESC.</td>
+				<td style="text-align: center; vertical-align: middle; border-top: 2px solid #ccc;">4</td>
 			</tr>
 			<tr>
 				<td>Micro High Torque Servo</td>
@@ -296,10 +296,10 @@
 				<td style="text-align: center; vertical-align: middle;">1</td>
 			</tr>
 			<tr>
-				<td rowspan="3" style="background-color:#ddd7f7; text-align: center; vertical-align: middle;">Power</td>
-				<td>HobbyMate XT60 PDB</td>
-				<td>Power Distribution Board. Distributes 11.1V to motors and VTx and steps down voltage for other components.</td>
-				<td style="text-align: center; vertical-align: middle;">1</td>
+				<td rowspan="3" style="background-color:#ddd7f7; text-align: center; vertical-align: middle; border-top: 2px solid #ccc;">Power</td>
+				<td style="border-top: 2px solid #ccc;">HobbyMate XT60 PDB</td>
+				<td style="border-top: 2px solid #ccc;">Power Distribution Board. Distributes 11.1V to motors and VTx and steps down voltage for other components.</td>
+				<td style="text-align: center; vertical-align: middle; border-top: 2px solid #ccc;">1</td>
 			</tr>
 			<tr>
 				<td>25A Lumenier 4-in-1 ESC</td>
@@ -359,7 +359,7 @@
 				<th>mAh</th>
 			</tr>
 			<tr>
-				<td rowspan="6">Controls</td>
+				<td rowspan="6" style="vertical-align: middle; text-align: center;">Controls</td>
 				<td>DC Motor</td>
 				<td>7.4 - 14.8</td>
 				<td>1250</td>
@@ -402,12 +402,12 @@
 				<td>135</td>
 			</tr>
 			<tr>
-				<td rowspan="2">Video</td>
-				<td>Transmitter</td>
-				<td>7.4 - 25.2</td>
-				<td>90</td>
-				<td>4.5</td>
-				<td>405</td>
+				<td rowspan="2" style="vertical-align: middle; text-align: center; border-top: 1px solid #ccc;">Video</td>
+				<td style="border-top: 2px solid #ccc;">Transmitter</td>
+				<td style="border-top: 2px solid #ccc;">7.4 - 25.2</td>
+				<td style="border-top: 2px solid #ccc;">90</td>
+				<td style="border-top: 2px solid #ccc;">4.5</td>
+				<td style="border-top: 2px solid #ccc;">405</td>
 			</tr>
 			<tr>
 				<td>Camera</td>
