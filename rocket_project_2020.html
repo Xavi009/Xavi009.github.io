@@ -431,13 +431,20 @@
 		</div>
 		<p style="text-align:center;"><i>Live video feedback at the SCC (left) and screenshot of test video at Santa Monica (right). Not sure why the failed test at Santa Monica has no color. Due to aspect ratio incompatibility, a large black bar appears on the right of the video</i></p>
 
-
-
-
-
-
 		<h3>2.2.4. Altimeters & GPS</h3>
-		<h2>2.3. Locking Mechanism</h2>
+		<p>One of the most important roles as an electronics lead is testing and implementing altimeters and GPS systems to ensure vehicle safety hardware deploys at the intended altitudes and to locate and retrieve the launch vehicle after launch. Two altimeters (Missileworks RRC3 and Stratologger SL100) are used for redundancy to ensure safety hardware deploys even if one altimeter fails. Each altimeter is connected to its own black powder charge via wires and e-matches. When a current is supplied from the altimeter, the e-match ignites the black powder that creates a controlled explosion at the intersections of the different body components of the launch vehicle. This blast causes shear pins between the vehicle sections to break, deploying the adequate parachute. Since the altimeters are wired to explosives, it is important to provide an external method to power the altimeters. This is accomplished using flush, latching push button switches. One of the requirements is that each altimeter be powered by its own battery supply. The following schematic shows the wiring of the avionics systems.</p>
+		<div class="w3-row">
+			<div class="w3-col s12"><img class="image-gal" style="max-width:425px" src="pictures/rocket20/Altimeters Schematic.png"></div>
+		</div>
+		<p>Since altimeters rely on IC pressure sensors, vent holes must be drilled on the launch vehicle to provide the ebay with static pressure. Formulas are provided in the manuals for either the RRC3 or SL100 altimeters and will not be provided here for brevity.</p>
+		<p>The GPS system uses a single Missileworks Tiny Telematics Tracker (T3) GPS and is powered by a single 1S LiPo battery. The GPS uses a simple dipole antenna and is placed within the nose cone as RF signals are blocked by the carbon fiber material of the launch vehicle. The nose cone is made of PLA plastic which the GPS does a better job sending signals. The resultant signal is picked up by a receiver which is connected to an Android device via Bluetooth. The GPS is also powered externally. The schematic is as follows.</p>
+		<div class="w3-row">
+			<div class="w3-col s12"><img class="image-gal" style="max-width:350px" src="pictures/rocket20/GPS Schematic.jpg"></div>
+		</div>
+
+
+		<h2>2.3. Locking Mechanism & Avionics Sled</h2>
+		<p></p>
 		<h2>2.4. Reports & Presentations</h2>
 		<h2>2.5. Subscale & Full Scale Launches</h2>
 	</div>

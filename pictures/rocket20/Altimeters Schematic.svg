@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 825 841.76" style="enable-background:new 0 0 825 841.76;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#231F20;stroke-width:4;stroke-miterlimit:10;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:46px;}
+	.st3{font-size:17px;}
+	.st4{fill:none;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#FF0000;stroke-width:3;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#231F20;stroke-width:3;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#FF0013;stroke-width:3;stroke-miterlimit:10;}
+	.st9{font-size:14px;}
+	.st10{font-size:43.8127px;}
+	.st11{font-size:30px;}
+	.st12{font-size:20.1474px;}
+</style>
+<rect x="229.31" y="193.85" class="st0" width="92.12" height="412.24"/>
+<text transform="matrix(0 -1 1 0 290.5206 462.576)" class="st1 st2">RRC3</text>
+<text transform="matrix(1 0 0 1 254.8563 49.4705)" class="st1 st2">Main Chute</text>
+<text transform="matrix(1 0 0 1 227.7809 83.1562)"><tspan x="0" y="0" class="st1 st3">Black Powder</tspan><tspan x="22.05" y="20.4" class="st1 st3">Charge</tspan></text>
+<text transform="matrix(1 0 0 1 406.614 83.1562)"><tspan x="0" y="0" class="st1 st3">Black Powder</tspan><tspan x="22.05" y="20.4" class="st1 st3">Charge</tspan></text>
+<text transform="matrix(1 0 0 1 227.7809 744.017)"><tspan x="0" y="0" class="st1 st3">Black Powder</tspan><tspan x="22.05" y="20.4" class="st1 st3">Charge</tspan></text>
+<text transform="matrix(1 0 0 1 406.614 744.017)"><tspan x="0" y="0" class="st1 st3">Black Powder</tspan><tspan x="22.05" y="20.4" class="st1 st3">Charge</tspan></text>
+<text transform="matrix(1 0 0 1 238.5334 823.061)" class="st1 st2">Drogue Chute</text>
+<g id="Battery">
+	
+		<rect x="26" y="271.3" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 391.3039 271.3039)" class="st4" width="68" height="120"/>
+	<text transform="matrix(1 0 0 1 31.8711 346.4614)" class="st1 st2">9V</text>
+	<line class="st5" x1="113.25" y1="313.18" x2="99.37" y2="313.18"/>
+	<line class="st5" x1="106.31" y1="306.24" x2="106.31" y2="320.12"/>
+	<line class="st6" x1="106.31" y1="342.85" x2="106.31" y2="356.74"/>
+</g>
+<g id="Battery_1_">
+	
+		<rect x="26" y="339.97" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 459.9706 339.9706)" class="st4" width="68" height="120"/>
+	<text transform="matrix(1 0 0 1 31.8711 415.1281)" class="st1 st2">9V</text>
+	<line class="st5" x1="113.25" y1="381.85" x2="99.37" y2="381.85"/>
+	<line class="st5" x1="106.31" y1="374.91" x2="106.31" y2="388.79"/>
+	<line class="st6" x1="106.31" y1="411.52" x2="106.31" y2="425.41"/>
+</g>
+<line class="st7" x1="742" y1="31.47" x2="742" y2="814.14"/>
+<g>
+	<line class="st5" x1="236.72" y1="311.36" x2="250.61" y2="311.36"/>
+	<line class="st5" x1="243.67" y1="318.3" x2="243.67" y2="304.42"/>
+	<line class="st6" x1="243.67" y1="281.69" x2="243.67" y2="267.8"/>
+</g>
+<polyline class="st8" points="120,381.85 215.33,381.85 215.33,623.8 368,623.8 368,491.44 418.89,491.44 "/>
+<polyline class="st6" points="120,418.46 203.33,418.46 203.33,635.14 381.65,635.14 381.65,454.82 418.89,454.82 "/>
+<g>
+	<line class="st5" x1="257.06" y1="201.67" x2="257.06" y2="215.55"/>
+	<line class="st5" x1="250.11" y1="208.61" x2="264" y2="208.61"/>
+	<line class="st6" x1="286.73" y1="208.61" x2="300.61" y2="208.61"/>
+</g>
+<text transform="matrix(0 -1 1 0 268.1175 311.3617)" class="st1 st9">Power</text>
+<text transform="matrix(1 0 0 1 241.0555 231.5467)" class="st1 st9">Main Chute</text>
+<line class="st8" x1="120" y1="313.18" x2="229.31" y2="313.18"/>
+<polyline class="st6" points="120,349.8 180,349.8 180,274.75 229.31,274.75 "/>
+<g>
+	<line class="st5" x1="293.67" y1="602.08" x2="293.67" y2="588.2"/>
+	<line class="st5" x1="300.61" y1="595.14" x2="286.73" y2="595.14"/>
+	<line class="st6" x1="264" y1="595.14" x2="250.11" y2="595.14"/>
+</g>
+<text transform="matrix(1 0 0 1 251.8746 582.4279)" class="st1 st9">Drogue </text>
+<g>
+	<rect x="418.89" y="248.72" class="st0" width="80.3" height="302.51"/>
+	<text transform="matrix(0 -1 1 0 462.4793 437.3017)" class="st1 st10">SL100</text>
+	<g>
+		<line class="st5" x1="424.53" y1="491.44" x2="438.41" y2="491.44"/>
+		<line class="st5" x1="431.47" y1="498.38" x2="431.47" y2="484.5"/>
+		<line class="st6" x1="431.47" y1="461.77" x2="431.47" y2="447.88"/>
+	</g>
+	<text transform="matrix(0 -1 1 0 454.0426 491.4379)" class="st1 st9">Power</text>
+	<g>
+		<line class="st5" x1="476.31" y1="267.6" x2="476.31" y2="253.72"/>
+		<line class="st5" x1="483.25" y1="260.66" x2="469.37" y2="260.66"/>
+		<line class="st6" x1="446.64" y1="260.66" x2="432.75" y2="260.66"/>
+	</g>
+	<text transform="matrix(1 0 0 1 423.6937 283.5925)" class="st1 st9">Main Chute</text>
+	<g>
+		<line class="st5" x1="438.73" y1="532.47" x2="438.73" y2="546.35"/>
+		<line class="st5" x1="431.79" y1="539.41" x2="445.68" y2="539.41"/>
+		<line class="st6" x1="468.41" y1="539.41" x2="482.29" y2="539.41"/>
+	</g>
+	<text transform="matrix(1 0 0 1 433.5544 525.7014)" class="st1 st9">Drogue </text>
+	<g>
+		<line class="st5" x1="496.01" y1="301.82" x2="482.12" y2="301.82"/>
+		<line class="st5" x1="489.07" y1="294.87" x2="489.07" y2="308.76"/>
+		<line class="st6" x1="489.07" y1="331.49" x2="489.07" y2="345.37"/>
+	</g>
+	<text transform="matrix(0 1 -1 0 468.4956 301.8167)" class="st1 st9">Switch</text>
+</g>
+<g>
+	<line class="st5" x1="317.69" y1="272.97" x2="303.8" y2="272.97"/>
+	<line class="st5" x1="310.74" y1="266.03" x2="310.74" y2="279.91"/>
+	<line class="st6" x1="310.74" y1="302.64" x2="310.74" y2="316.53"/>
+</g>
+<text transform="matrix(0 1 -1 0 290.1753 272.9691)" class="st1 st9">Switch</text>
+<polyline class="st4" points="321.42,309.58 380.47,309.58 380.47,238.97 682,238.97 "/>
+<path class="st8" d="M742,371.14"/>
+<polyline class="st8" points="321.42,272.97 351,272.97 351,208.61 705,208.61 "/>
+<text transform="matrix(1 0 0 1 762.3337 136.1373)" class="st1 st11">Wall</text>
+<text transform="matrix(1 0 0 1 762.3052 441.1342)"><tspan x="0" y="0" class="st1 st12">Safety</tspan><tspan x="0" y="24.18" class="st1 st12">Switch</tspan><tspan x="0" y="48.35" class="st1 st12">(x2)</tspan></text>
+<polyline class="st4" points="793.33,143.8 793.33,162.47 762.33,162.47 "/>
+<polygon points="754.23,162.47 764.18,168.22 764.18,156.72 "/>
+<g>
+	<line class="st4" x1="768.05" y1="422.81" x2="768.05" y2="374.13"/>
+	<polygon points="768.05,366.03 762.31,375.98 773.8,375.98 	"/>
+</g>
+<path class="st8" d="M744.33,381.85"/>
+<line class="st8" x1="499.19" y1="301.82" x2="678.32" y2="302.64"/>
+<line class="st4" x1="499.19" y1="338.29" x2="716.16" y2="339.11"/>
+<line class="st8" x1="257.06" y1="193.85" x2="257.06" y2="124.12"/>
+<line class="st6" x1="293.67" y1="193.85" x2="293.67" y2="124.12"/>
+<line class="st8" x1="440.74" y1="715.76" x2="440.74" y2="550.49"/>
+<line class="st6" x1="477.35" y1="715.76" x2="477.35" y2="550.49"/>
+<line class="st8" x1="476.31" y1="248.72" x2="476.31" y2="124.12"/>
+<line class="st6" x1="439.69" y1="248.72" x2="439.69" y2="124.12"/>
+<line class="st8" x1="293.67" y1="715.76" x2="293.67" y2="601.48"/>
+<line class="st6" x1="257.06" y1="715.76" x2="257.06" y2="601.48"/>
+<rect x="716.16" y="196.59" width="56.35" height="56.35"/>
+<rect x="716.16" y="291.95" width="56.35" height="56.35"/>
+<line class="st4" x1="380.47" y1="238.97" x2="716.16" y2="238.97"/>
+<line class="st8" x1="351" y1="208.61" x2="716.16" y2="208.61"/>
+<line class="st8" x1="499.19" y1="301.82" x2="716.16" y2="302.82"/>
+</svg>
