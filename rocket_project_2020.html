@@ -50,7 +50,7 @@
 
 <!--Content-->
 <div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
-<p>You chose the wrong page.....I still haven't finished documenting this project. Why not try <a href="rocket_project_2019.html">2019</a>?</p>
+<p>I still haven't finished documenting this project. Why not try <a href="rocket_project_2019.html">2019</a>?</p>
 	<div class="content-padding">
 		<h1>1. What is this?</h1>
 		<p>In 2019, Bearospace @ UCLA achieved <a href="rocket_project_2019.html">first place in NASA's First Nations Launch</a> (FNL). Following this success, Bearospace applied and was accepted to NASA Student Launch (formerly known as University Student Launch Initiative, or USLI). USLI is a research-based, competitive, high-powered rocketry competition focused primarily on developing unique payload systems. It strives to provide, relevant, cost-effective research and development of current objectives/problems faced by the Artemis program. Unlike FNL, USLI is not limited to minorities, nor does it provide funding for teams. USLI is a more competitive and higher caliber student project. I encourage you to read the <a href="#context&struggles">Context & Struggles</a> section to better understand the scope and effort USLI meant for the Bearospace team.</p>
@@ -119,7 +119,7 @@
 				<img class="image-gal" style="max-width: 400px;" src="pictures/rocket20/Rotation Part.PNG">
 			</div>	
 		</div>
-		<p>The diameter of the circular block holder allots space for the leftmost eyebolt (which is used for the launch vehicle's parachute), however, this means part of the stepper motor is exposed. If rotated counterclockwise, the stepper motor will interfere with the eyebolt, which jeopardizes the deployment mechanism’s ability to orient the rover. Moving the motor and shaft towards the center would mitigate this problem, but would limit the space available for electronics onboard the rover.</p>
+		<p>The diameter of the circular block holder allots space for the leftmost eyebolt (which is used for the launch vehicle's parachute), however, this means part of the stepper motor is exposed. If rotated counterclockwise, the stepper motor will interfere with the eyebolt, which jeopardizes the deployment mechanism's ability to orient the rover. Moving the motor and shaft towards the center would mitigate this problem, but would limit the space available for electronics onboard the rover.</p>
 
 		<h3>2.1.2. Rover</h3>
 		<div class="w3-row">
@@ -130,13 +130,13 @@
 				<img class="image-gal" src="pictures/rocket20/Rover Assembly 2.PNG">
 			</div>
 		</div>
-		<p>The payload features a 11.4" x 4.3" x 4.2" rover with a collapsible collection arm and antenna for storage within the launch vehicle. A 2.3" x 1.9" x 0.4" (~28.6mL) storage area within the chassis of the rover will store simulated lunar ice samples. The same collection arm doubles as a cap for the collection bin to ensure collected samples are retained within the rover during transportation. A separate 2.4" x 3.0" x 4.0" compartmentalized section, located on the back side of the rover, is dedicated to housing all onboard electronics. A requirement in the USLI handbook states that all lithium polymer batteries must be sufficiently protected and marked as flammable. To satisfy this requirement, the single lithium polymer battery powering onboard electronics is located in a separate, bright red compartment within the electronics bay. All other electronics are placed on the top half of the electronics bay for easier access to electronics. Both compartments and lid are fastened to each other using 6-32 nuts and bolts. The bottom red compartment of the ebay is attached to the chassis using epoxy. The contact area between the chassis and the bottom ebay compartment is maximized to increase the amount of epoxy applied between the two parts. The rover uses wheels instead of treads as its form of movement. While this limits the rover’s ability to overcome obstacles located under its center, the driver will take extra precaution in avoiding obstacles.</p>
+		<p>The payload features a 11.4" x 4.3" x 4.2" rover with a collapsible collection arm and antenna for storage within the launch vehicle. A 2.3" x 1.9" x 0.4" (~28.6mL) storage area within the chassis of the rover will store simulated lunar ice samples. The same collection arm doubles as a cap for the collection bin to ensure collected samples are retained within the rover during transportation. A separate 2.4" x 3.0" x 4.0" compartmentalized section, located on the back side of the rover, is dedicated to housing all onboard electronics. A requirement in the USLI handbook states that all lithium polymer batteries must be sufficiently protected and marked as flammable. To satisfy this requirement, the single lithium polymer battery powering onboard electronics is located in a separate, bright red compartment within the electronics bay. All other electronics are placed on the top half of the electronics bay for easier access to electronics. Both compartments and lid are fastened to each other using 6-32 nuts and bolts. The bottom red compartment of the ebay is attached to the chassis using epoxy. The contact area between the chassis and the bottom ebay compartment is maximized to increase the amount of epoxy applied between the two parts. The rover uses wheels instead of treads as its form of movement. While this limits the rover's ability to overcome obstacles located under its center, the driver will take extra precaution in avoiding obstacles.</p>
 		<div class="w3-row">
 			<div class="w3-col l12 m12 s12">
 				<img class="image-gal" style="max-width: 600px;" src="pictures/rocket20/Rover Exploded.JPG">
 			</div>
 		</div>
-		<p>A crucial component for deploying the rover and managing electronics onboard the rover is the electronics bay (7 & 8). Since the electronics bay interfaces with the deployment mechanism’s rods, the electronics bay must support the weight of the rover and landing impact forces while stored within the launch vehicle. A custom printed female threaded rod (10) interfaces with the threaded rod of the REA. A small camera is mounted on top of the payload on component (9) for video feedback. Additional design considerations were critical for all components but will be omitted for brevity.</p>
+		<p>A crucial component for deploying the rover and managing electronics onboard the rover is the electronics bay (7 & 8). Since the electronics bay interfaces with the deployment mechanism's rods, the electronics bay must support the weight of the rover and landing impact forces while stored within the launch vehicle. A custom printed female threaded rod (10) interfaces with the threaded rod of the REA. A small camera is mounted on top of the payload on component (9) for video feedback. Additional design considerations were critical for all components but will be omitted for brevity.</p>
 
 		<h2>2.2. Electronics</h2>
 		<p>As the electronics lead, I was responsible for creating electrical systems for 3 main tasks/sections:</p>
@@ -166,7 +166,7 @@
 			</tr>
 			<tr>
 				<td style="vertical-align:middle;">MPU-6050</td>
-				<td>Accelerometer/gyroscope sensor (6DOF). Records translational acceleration and rotational velocity. Used to provide positional feedback of REA’s rotating block.</td>
+				<td>Accelerometer/gyroscope sensor (6DOF). Records translational acceleration and rotational velocity. Used to provide positional feedback of REA's rotating block.</td>
 				<td style="text-align: center; vertical-align:middle;">1</td>
 			</tr>
 			<tr>
@@ -227,7 +227,7 @@
 				<li><b><i>Apogee:</i></b> the Arduino code will define apogee as the highest point after reaching an arming altitude of 1000 ft higher than the calibrated ground level altitude. This allows the Arduino to differentiate between when the launch vehicle is on the pad and when it has landed.</li>
 				<li><b><i>Landing</i></b> once altitude values stop fluctuating during descent, a landing has occured. Current altitude will be compared with calibrated altitude to verify the launch vehicle has landed. A two minute delay will initiate prior to the next step.</li>
 				<li><b><i>Orient</i></b> after the delay, angular position and gravitional acceleraion of the rover will be analyzed using the accelerometer and gyroscope module imbedded in the rotating block. A stepper motor will drive the REA until the correct orientation is achieved.</li>
-				<li><b><i>Deploy:</i></b> a second stepper motor will drive the REA’s linear actuator to deploy the rover.</li>
+				<li><b><i>Deploy:</i></b> a second stepper motor will drive the REA's linear actuator to deploy the rover.</li>
 			</ul>
 		</div>
 		<p>The following is a schematic of all REA electronics.</p>
@@ -237,7 +237,7 @@
 		
 
 		<h3>2.2.2. Rover</h3>
-		<p>Rover electronics were selected from commercially available drone parts for their small form factor, compatibility with well known components, and high-powered RF capabilities. An Arduino Uno is much larger than the selected flight controller used which made this option an attractive one. This ended up being a huge mistake as the team was not able to program the system to better fit the team’s needs. A better solution would be to use dual in-line package (DIP) chip microcontrollers and wire all necessary peripherals and components to a perfboard. This would allow greater control over the designed system in terms of hardware and software while remaining relatively small enough to fit within the payload.</p>
+		<p>Rover electronics were selected from commercially available drone parts for their small form factor, compatibility with well known components, and high-powered RF capabilities. An Arduino Uno is much larger than the selected flight controller used which made this option an attractive one. This ended up being a huge mistake as the team was not able to program the system to better fit the team's needs. A better solution would be to use dual in-line package (DIP) chip microcontrollers and wire all necessary peripherals and components to a perfboard. This would allow greater control over the designed system in terms of hardware and software while remaining relatively small enough to fit within the payload.</p>
 		<p>Nonetheless, the selected components and schematic are presented below.</p>
 		<table class="general-table" style="border-collapse: collapse;">
 			<tr>
@@ -281,7 +281,7 @@
 			<tr>
 				<td style="background-color:#f7d9d7; text-align: center; vertical-align: middle; border-top: 2px solid #ccc;">Controller</td>
 				<td style="border-top: 2px solid #ccc;">OpenPilot CC3D Evo Flight Controller</td>
-				<td style="border-top: 2px solid #ccc;">Controls motors via ESC’s and PWM signals. Receives PWM inputs from Rx.</td>
+				<td style="border-top: 2px solid #ccc;">Controls motors via ESC's and PWM signals. Receives PWM inputs from Rx.</td>
 				<td style="text-align: center; vertical-align: middle; border-top: 2px solid #ccc;">1</td>
 			</tr>
 			<tr>
@@ -444,7 +444,33 @@
 
 
 		<h2>2.3. Locking Mechanism & Avionics Sled</h2>
-		<p></p>
+		<p>A miscellaneous component I was in charge of was devising a secure and repeatable way to place electronics within the launch vehicle without compromising the structural integrity of the vehicle's safety hardware. The devised solution is a slide-and-lock locking mechanism that also holds the avionics sled. This allows the team to make all necessary wiring from outside the launch vehicle and then lock the entire system into place without damaging the launch vehicle like other teams.</p>
+		<div class="w3-row">
+			<div class="w3-col s12"><img class="image-gal" style="max-width:550px" src="pictures/rocket20/Locking Mechanism Assembly.PNG"></div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Avionics Sled Assembly 1.PNG"></div>
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Avionics Sled Assembly 2.PNG"></div>
+		</div>
+		<p>The locking mechanism is comprised of 3 different sections: (1) Inner ring (2) Avionics sled & electronics (3) outer ring. The inner and outer rings are made from .75" thick pine wood planks and reinforced with .12" thick aluminum sheets. The pine wood pieces were manufactured to shape using a CNC mill and the metal sheets were waterjet all by yours truly. The avionics sled and the 9V battery holders are 3D printed with PLA plastic. Small sheets of balsa wood are epoxied to cutouts of the sled to provide a surface that can be screwed onto. The 2 altimeters and Arduino Uno are screwed onto the sled's wood using 4-40 screws. All other components are epoxied together to provide two cohesive components (inner ring + sled and outer ring).</p>
+		<div class="w3-row">
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Built 1.jpg"></div>
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Built 2.jpg"></div>
+		</div>
+		<p>Because the locking mechanism is also a load bearing component for the launch vehicle’s safety hardware, the locking mechanism was virtually and physically tested. Compared to a traditional bulkhead, the locking mechanism experiences greater stress since all forces are concentrated to 3 cantilever tabs. The outer ring’s cross-sectional area is also reduced which further concentrates stress. The locking mechanism was tested with a safety factor of 4 in both virtual and physical tests.</p>
+		<div class="w3-row">
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Virtual 1.png"></div>
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Virtual 2.png"></div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Physical 1.jpg"></div>
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Physical 2.jpg"></div>
+		</div>
+		<p>Virtually testing the composite assemblies in SolidWorks verified the mechanism's ability to withstand flight forces with a factor of safety of 4. Physical testing resulted in permanent damage to a prototype sled but no damage was sustained by the tabs of the inner and outer rings of the locking mechanism. The sled was improved as shown in the 3D model of the locking mechanism.</p>
+
+
+
+
 		<h2>2.4. Reports & Presentations</h2>
 		<h2>2.5. Subscale & Full Scale Launches</h2>
 	</div>
