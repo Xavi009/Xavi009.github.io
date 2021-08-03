@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javier Gomez: Rocket Project 2020</title>
+<link rel="icon" type="image/png" href="pictures/fav-icon.png">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--MathJax-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!--Navbar-->
+<div class="w3-bar w3-black w3-text-white">
+	<a href="index.html" class="w3-bar-item w3-button w3-left"><img class="navbar-logo" src="pictures/logo.png"></a>
+	<div class="w3-dropdown-click w3-right">
+		<button class="w3-button w3-padding-16 w3-hide-small" onclick="myFunction2()">&#9776;</button>
+		<div id="demo2" class="w3-dropdown-content w3-bar-block" style="right: 0px;">
+			<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+			<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+			<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+		</div>
+	</div>
+	<a href="internships.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Internships</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Projects</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Clubs</a>
+	<a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Home</a>
+	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-animate-top">
+	<a href="index.html" class="w3-bar-item w3-button">Home</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button">College Clubs</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button">Projects</a>
+	<a href="internships.html" class="w3-bar-item w3-button">Internships</a>
+	<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+	<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+	<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+</div>
+
+
+<!--Header-->
+<div class="w3-light-grey">
+	<div class="w3-content w3-container" style="max-width:1200px; padding-top: 90px; padding-bottom: 90px;">
+		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="notable_coursework.html" class="text-ref">Notable Coursework</a></h1>
+	</div>
+</div>
+
+
+<!--Content-->
+<div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
+	<div class="content-padding">
+		<h1>MAE M168 Intro to FEA and FEM</h1>
+		<h2>4. Project 4: Launch Vehicle Modal Analysis</h2>
+		<h3>4.1. Determine the natural frequencies of a stationary launch vehicle at the launch pad w/o pressurized compartments.</h3>
+		<table class="general-table">
+			<tr>
+				<th>Mode</th>
+				<th>Frequency (Hz)</th>
+			</tr>
+			<tr><td style="text-align: center; vertical-align:middle;">1</td><td style="text-align: center; vertical-align:middle;">0.74083</td></tr>
+			<tr><td style="text-align: center; vertical-align:middle;">2</td><td style="text-align: center; vertical-align:middle;">3.0329</td></tr>
+			<tr><td style="text-align: center; vertical-align:middle;">3</td><td style="text-align: center; vertical-align:middle;">25.322</td></tr>
+		</table>
+		<div class="w3-row">
+			<div class="w3-col m4 s12"><img class="image-gal" style="max-width: 200px;" src="pictures/notable_coursework/rocket1.png"></div>
+			<div class="w3-col m4 s12"><img class="image-gal" style="max-width: 200px;" src="pictures/notable_coursework/rocket2.png"></div>
+			<div class="w3-col m4 s12"><img class="image-gal" style="max-width: 200px;" src="pictures/notable_coursework/rocket3.png"></div>
+		</div>
+		<h3>4.2. Static Wind Analysis: Analyze steady state winds with expected 35% increase gust wind impulse applied for 0.5 seconds with pressurized compartments. Determine its response.</h3>
+		<div class="w3-row">
+			<div class="w3-col s6"><img class="image-gal" style="max-width: 240px;" src="pictures/notable_coursework/rocket4_1.png"></div>
+			<div class="w3-col s6"><img class="image-gal" src="pictures/notable_coursework/rocket4_2.png"></div>
+		</div>
+		<p style="text-align: center; font-size: 14px;"><i>Displacement (left) and stress (right) of launch vehicle due to steady state winds. The bottom chamber is pressurized at 400 psi. Max horizontal displacement experienced at the tip of the launch vehicle is 26.5 inches. Max Von Mises stress experienced at the reinforcement section between the chamber and nosecone is 35780 psi.</i></p>
+
+		<div class="w3-row">
+			<div class="w3-col s6"><img class="image-gal" style="max-width: 200px;" src="pictures/notable_coursework/rocket5_1.png"></div>
+			<div class="w3-col s6"><img class="image-gal" src="pictures/notable_coursework/rocket5_2.png"></div>
+		</div>
+		<p style="text-align: center; font-size: 14px;"><i>Displacement (left) and stress (right) of launch vehicle due to impulse winds 135% greater than steady state. The bottom chamber is pressurized at 400 psi. Max horizontal displacement experienced at the tip of the launch vehicle is 19.76 inches. Max stress is located at pinned location of the launch vehicle during the first displacement peak experienced due to the impulse. The max stress is 50060 psi.</i></p>
+
+		<h3>4.3. Dynamic Wind Analysis. Analyze the previous problem, but time-variant. Assume a 1% damping. Plot the deflections, the loads in the pin, and stresses as a function of time.</h3>
+
+		<div class="w3-row"><div class="w3-col s12"><img class="image-gal" style="max-width: 650px;" src="pictures/notable_coursework/rocket6.png"></div></div>
+		<p style="text-align: center; font-size: 14px;"><i>Plot of reaction force of pinned location vs time after being subjected to impulse winds 135% greater than steady state. Max reaction force is 48630 lbs.</i></p>
+
+		<div class="w3-row"><div class="w3-col s12"><img class="image-gal" style="max-width: 650px;" src="pictures/notable_coursework/rocket7.png"></div></div>
+		<p style="text-align: center; font-size: 14px;"><i>Plot of Von Mises stress of pinned location vs time after being subjected to impulse winds 135% greater than steady state. Max stress is 48666.6 psi.</i></p>
+
+		<div class="w3-row"><div class="w3-col s12"><img class="image-gal" style="max-width: 650px;" src="pictures/notable_coursework/rocket8.png"></div></div>
+		<p style="text-align: center; font-size: 14px;"><i>Plot of launch vehicle tip vs time due to impulse winds 135% greater than steady state. Max horizontal displacement experienced is 26.723 inches.</i></p>
+	</div>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("demo2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+window.onresize = window.onload =  function() {
+    var width = window.innerWidth;
+    var elms = document.querySelectorAll("[id='large_block_diagram']");
+
+    if (width <= 675){
+    	for(var i = 0; i < elms.length; i++){
+    		elms[i].setAttribute("viewBox", "0 0 8 20");
+    	}
+    }
+    else{
+    	for(var i = 0; i < elms.length; i++){
+    		elms[i].setAttribute("viewBox", "0 0 20 8");
+    	}
+    }
+}
+</script>
+</html>
