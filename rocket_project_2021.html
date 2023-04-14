@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javier Gomez: Rocket Project 2021</title>
+<link rel="icon" type="image/png" href="pictures/fav-icon.png">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--MathJax-->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<!--Navbar-->
+<div class="w3-bar w3-black w3-text-white">
+	<a href="index.html" class="w3-bar-item w3-button w3-left"><img class="navbar-logo" src="pictures/logo.png"></a>
+	<div class="w3-dropdown-click w3-right">
+		<button class="w3-button w3-padding-16 w3-hide-small" onclick="myFunction2()">&#9776;</button>
+		<div id="demo2" class="w3-dropdown-content w3-bar-block" style="right: 0px;">
+			<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+			<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+			<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+		</div>
+	</div>
+	<a href="internships.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Internships</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Projects</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Clubs</a>
+	<a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-small">Home</a>
+	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16 w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-animate-top">
+	<a href="index.html" class="w3-bar-item w3-button">Home</a>
+	<a href="college_clubs.html" class="w3-bar-item w3-button">College Clubs</a>
+	<a href="personal_projects.html" class="w3-bar-item w3-button">Projects</a>
+	<a href="internships.html" class="w3-bar-item w3-button">Internships</a>
+	<a href="high_school.html" class="w3-bar-item w3-button">High School</a>
+	<a href="personal_achievements.html" class="w3-bar-item w3-button">Personal Achievements</a>
+	<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
+</div>
+
+
+<!--Header-->
+<div class="w3-light-grey">
+	<div class="w3-content w3-container" style="max-width:1200px; padding-top: 90px; padding-bottom: 90px;">
+		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="college_clubs.html" class="text-ref">College Clubs</a><i class="material-icons">arrow_forward</i><a href="rocket_project_2021.html" class="text-ref">Rocket Project 2021</a></h1>
+	</div>
+</div>
+
+
+<!--Content-->
+<div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
+	<div class="content-padding">
+		<h1>1. What is this?</h1>
+		<p>In 2019, Bearospace @ UCLA achieved <a href="rocket_project_2019.html">first place in NASA's First Nations Launch</a> (FNL). Following this success, Bearospace applied and was accepted to NASA Student Launch (formerly known as University Student Launch Initiative, or USLI). USLI is a research-based, competitive, high-powered rocketry competition focused primarily on developing unique payload systems. It strives to provide, relevant, cost-effective research and development of current objectives/problems faced by the Artemis program. Unlike FNL, USLI is not limited to minorities, nor does it provide funding for teams. USLI is a more competitive and higher caliber student project. I encourage you to read the <a href="#context&struggles">Context & Struggles</a> section to better understand the scope and effort USLI meant for the Bearospace team.</p>
+		<h2>1.1. Relevant Requirements</h2>
+		<p>This year's unique payload criteria was to design a system capable of being launched in a high power rocket, landing safely, and recovering simulated lunar ice from one of several locations on the surface of the launch field. Important high-level payload design requirements are presented below:</p>
+		<ol>
+			<li>Five recovery areas will be located on the surface of the launch field. Teams may recover a sample from any of the recovery areas. Each recovery site will be at least 3 feet in diameter and contain sample material extending from ground level to at least 2 inches below the surface.</li>
+			<li>The recovered ice sample will be a minimum of 10 milliliters (mL).</li>
+			<li>Once the sample is recovered, it must be stored and transported at least 10 linear feet from the recovery area.</li>
+			<li>Teams must abide by all FAA and NAR rules and regulations.</li>
+			<li>Black Powder and/or similar energetics are only permitted for deployment of in-flight recovery systems. Any ground deployments must utilize mechanical systems.</li>
+			<li>Any part of the payload or vehicle that is designed to be deployed, whether on the ground or in the air, must be fully retained until it is deployed as designed.</li>
+		</ol>
+		<p>Additional general, vehicle, recovery, and safety requirements are outlined in the manual but are not as applicable to my role so they will not be discussed.</p>
+		<a class="content-text" href="files/rocket20/SL-Handbook-2020.pdf" target="_blank" rel="noreferrer noopener"><i class="material-icons" style="font-size: 15px;">insert_drive_file</i>Open the 2019-2020 USLI Handbook</a>
+		<h2>1.2. Grading</h2>
+		<p>Grading for the competition was based on major milestone documents and deliverables in addition to physical launch vehicle objectives. Milestone deliverables (first 4 bullet points) include a report, presentation, and milestone proof of concept launches if applicable.</p>
+		<ul>
+			<li>Preliminary Design Review (PDR) (20%)</li>
+			<li>Critical Design Review (CDR) (20%)</li>
+			<li>Flight Readiness Review (FRR) (20%)</li>
+			<li>Post Launch Assessment Review (PLAR) (15%)</li>
+			<li>Flight and Recovery (10%)</li>
+			<li>Altitude (10%)</li>
+			<li>STEM Engagement (5%)</li>
+		</ul>
+		<p>Due to COVID-19, grading criteria that depended on physically building and launching the rocket were omitted from the competition.</p>
+		<a class="content-text" href="files/rocket20/University of California Los Angeles - 2020 Overall Score Sheet.pdf" target="_blank" rel="noreferrer noopener"><i class="material-icons" style="font-size: 15px;">insert_drive_file</i>Open Bearospace's 2019-2020 score sheet</a>
+		<h2>1.3. Awards</h2>
+		<p>Bearospace @ UCLA is proud to say it placed 22nd out of 46 teams and was awarded 2nd place rookie award out of 8 rookie candidate teams. For its first time ever competing in USLI, this is an outstanding accomplishment.</p>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 400px;" src="pictures/rocket20/award.jpg">
+			</div>	
+		</div>
+	</div>
+
+	<div class="content-padding">
+		<h1>2. My Roles & Tasks</h1>
+		<p>Because of the extreme lack of members between the previous year and this year, I was formally known as both the electronics lead and the payloads lead. To some degree, this dual role made it easier to collaborate between the electronics and the payloads team since I was essentially both teams, but the workload was still twice as much. After recruiting freshman, I had a sizeable team of 5 on the electronics team but only me on the payloads team. Below is a snippet of the work I managed to complete before COVID-19 halted progress.</p>
+
+		<h2>2.1. Payload</h2>
+		<p>As the payloads lead, I was responsible for designing, manufacturing, and mechanically testing the payload and its associated deployment method. This meant a lot of SolidWorks, 3D printing, CNC milling and modifying commercial-off-the-shelf (COTS) components. Each dimension was iteratively modified during the R&D phase of manufacturing. As the only member of the payloads team, I spent almost all my time in the machine shop, either starting 3D prints or CNC milling wooden components.</p>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 550px;" src="pictures/rocket20/Entire Assembly.PNG">
+			</div>	
+		</div>
+		<p>The payload design features two functional components:</p>
+		<ol>
+			<li>The Rover Ejection Assembly (REA)</li>
+			<li>The Rover</li>
+		</ol>
+		<p>The rover ejection assembly is tasked with retaining and deploying the rover in the correct orientation after a landing event has been identified. Once deployed, the payload will begin radio frequency communication with a driver on the ground. The rover will receive inputs from the driver and return video feedback to the driver to complete the mission.</p>
+
+		<h3>2.1.1. Rover Ejection Assembly (REA)</h3>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 650px;" src="pictures/rocket20/Ejection System Assembly.PNG">
+			</div>	
+		</div>
+		<p>Using the above figure as reference, the leftmost stepper motor (1) is attached to a bulkhead (3) using epoxy. This stepper motor connects to the entire assembly to rotate the payload. Attaching the motor to the entire assembly makes the motor a load bearing component. A large moment will be induced on the stepper motor from the protruding rods and payload resting on the rods. To prevent this, an additional aluminum alloy bearing ring (4) will be used. The bearing ring will support the entire assembly so that the leftmost stepper motor will only rotate the assembly, not support it. All load bearing forces will be applied to the bearing ring. Since the purchased bearing ring is flat, additional 3D printed rings (2 & 6) are placed to offset one rotating ring from the other. These standoff rings interface with the bearing ring and the bulkhead or circular block holder (7). A circular tube (5) will fit around the shaft of the stepper motor and will be epoxied into the large circular block holder (7). The circular block holder acts as a rotating bulkhead for which to attach the rods and additional stepper motor onto. Cutouts for another stepper motor, a gyroscope/accelerometer module, and a steel rod are provided. The unthreaded rod (9) and stepper motor (1) will be epoxied into the designated hole inside the circular block holder. In order to attach the lead screw (10) onto the stepper motor, a 5mm to 10mm coupling (9) will be used. The coupling allows two shafts of different diameters to be attached by adjusting the force applied on each using screws. Both the lead screw and unthreaded rod are ⅜" in diameter to provide enough rigidity to support the weight of the payload.</p>
+		<p>A unique aspect of the rover deployment mechanism is the circular block holder (7). Dimensions of each cut were dictated by the size of the stepper motor, interference with the eyebolt attached to the bulkhead, and size constraints imposed by the rover ebay. A concern with the shape of the circular block holder was its thin wall size for housing the stepper motor compromising the overall strength of the retention system and how protrusion of the stepper motor outside the boundary of the circular block holder outer diameter clashes with the eyebolt if driven the wrong way. The following figure demonstrates the reasoning for the circular block holder.</p>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 400px;" src="pictures/rocket20/Rotation Part.PNG">
+			</div>	
+		</div>
+		<p>The diameter of the circular block holder allots space for the leftmost eyebolt (which is used for the launch vehicle's parachute), however, this means part of the stepper motor is exposed. If rotated counterclockwise, the stepper motor will interfere with the eyebolt, which jeopardizes the deployment mechanism's ability to orient the rover. Moving the motor and shaft towards the center would mitigate this problem, but would limit the space available for electronics onboard the rover.</p>
+
+		<h3>2.1.2. Rover</h3>
+		<div class="w3-row">
+			<div class="w3-col l6 m6 s12">
+				<img class="image-gal" src="pictures/rocket20/Rover Assembly 1.PNG">
+			</div>
+			<div class="w3-col l6 m6 s12">
+				<img class="image-gal" src="pictures/rocket20/Rover Assembly 2.PNG">
+			</div>
+		</div>
+		<p>The payload features a 11.4" x 4.3" x 4.2" rover with a collapsible collection arm and antenna for storage within the launch vehicle. A 2.3" x 1.9" x 0.4" (~28.6mL) storage area within the chassis of the rover will store simulated lunar ice samples. The same collection arm doubles as a cap for the collection bin to ensure collected samples are retained within the rover during transportation. A separate 2.4" x 3.0" x 4.0" compartmentalized section, located on the back side of the rover, is dedicated to housing all onboard electronics. A requirement in the USLI handbook states that all lithium polymer batteries must be sufficiently protected and marked as flammable. To satisfy this requirement, the single lithium polymer battery powering onboard electronics is located in a separate, bright red compartment within the electronics bay. All other electronics are placed on the top half of the electronics bay for easier access to electronics. Both compartments and lid are fastened to each other using 6-32 nuts and bolts. The bottom red compartment of the ebay is attached to the chassis using epoxy. The contact area between the chassis and the bottom ebay compartment is maximized to increase the amount of epoxy applied between the two parts. The rover uses wheels instead of treads as its form of movement. While this limits the rover's ability to overcome obstacles located under its center, the driver will take extra precaution in avoiding obstacles.</p>
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12">
+				<img class="image-gal" style="max-width: 600px;" src="pictures/rocket20/Rover Exploded.JPG">
+			</div>
+		</div>
+		<p>A crucial component for deploying the rover and managing electronics onboard the rover is the electronics bay (7 & 8). Since the electronics bay interfaces with the deployment mechanism's rods, the electronics bay must support the weight of the rover and landing impact forces while stored within the launch vehicle. A custom printed female threaded rod (10) interfaces with the threaded rod of the REA. A small camera is mounted on top of the payload on component (9) for video feedback. Additional design considerations were critical for all components but will be omitted for brevity.</p>
+
+
+		<h2>2.2. Locking Mechanism & Avionics Sled</h2>
+		<p>A miscellaneous component I was in charge of was devising a secure and repeatable way to place electronics within the launch vehicle without compromising the structural integrity of the vehicle's safety hardware. The devised solution is a slide-and-lock locking mechanism that also holds the avionics sled. This allows the team to make all necessary wiring from outside the launch vehicle and then lock the entire system into place without damaging the launch vehicle like other teams.</p>
+		<div class="w3-row">
+			<div class="w3-col s12"><img class="image-gal" style="max-width:550px" src="pictures/rocket20/Locking Mechanism Assembly.PNG"></div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Avionics Sled Assembly 1.PNG"></div>
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Avionics Sled Assembly 2.PNG"></div>
+		</div>
+		<p>The locking mechanism is comprised of 3 different sections: (1) Inner ring (2) Avionics sled & electronics (3) outer ring. The inner and outer rings are made from .75" thick pine wood planks and reinforced with .12" thick aluminum sheets. The pine wood pieces were manufactured to shape using a CNC mill and the metal sheets were waterjet all by yours truly. The avionics sled and the 9V battery holders are 3D printed with PLA plastic. Small sheets of balsa wood are epoxied to cutouts of the sled to provide a surface that can be screwed onto. The 2 altimeters and Arduino Uno are screwed onto the sled's wood using 4-40 screws. All other components are epoxied together to provide two cohesive components (inner ring + sled and outer ring).</p>
+		<div class="w3-row">
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Built 1.JPG"></div>
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Built 2.JPG"></div>
+		</div>
+		<p>Because the locking mechanism is also a load bearing component for the launch vehicle’s safety hardware, the locking mechanism was virtually and physically tested. Compared to a traditional bulkhead, the locking mechanism experiences greater stress since all forces are concentrated to 3 cantilever tabs. The outer ring’s cross-sectional area is also reduced which further concentrates stress. The locking mechanism was tested with a safety factor of 4 in both virtual and physical tests.</p>
+		<div class="w3-row">
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Virtual 1.png"></div>
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Virtual 2.png"></div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Physical 1.jpg"></div>
+			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Physical 2.jpg"></div>
+		</div>
+		<p>Virtually testing the composite assemblies in SolidWorks verified the mechanism's ability to withstand flight forces with a factor of safety of 4. Physical testing resulted in permanent damage to a prototype sled but no damage was sustained by the tabs of the inner and outer rings of the locking mechanism. The sled was improved as shown in the 3D model of the locking mechanism.</p>
+
+
+		<h2>2.3. Virtual Testing</h2>
+
+
+
+
+		<h2>2.4. Reports & Presentations</h2>
+		<p>A huge component of being a technical lead is writing reports detailing the progress of the project. As the payloads and electronics lead, I was in charge of writing the technical details of all electrical hardware and payload structural components, create electrical schematics and engineering drawings, create test plans, and verify requirements compliance within each relevant subsection. In addition to reports, presentations were created and presented to NASA engineers for 45 min with a 15 min Q&A.</p>
+		<p>Having no experience with writing large reports, our first PDR report was not the best quality (reaching only a measly 110 pages). After this point, the bar was raised and the subsequent CDR and FRR reports were a minimum of 200 pages.</p>
+		<table style="width:100%; display:table;">
+			<tr><td style="padding: 0px; margin: 0px;"><u><b>PDR</b></u></td><td style="padding: 0px; margin: 0px;"><u><b>CDR</b></u></td><td style="padding: 0px; margin: 0px;"><u><b>FRR</b></u></td></tr>
+			<tr>
+				<td>
+					<p style="padding: 0px; margin: 0px;"><a class="content-text" href="files/rocket20/UCLA - 2020 - PDR - Report.pdf" target="_blank" rel="noreferrer noopener"><i class="material-icons" style="font-size: 11px;">insert_drive_file</i>Report</a></p>
+					<p style="padding: 0px; margin: 0px;"><a class="content-text" href="files/rocket20/UCLA - 2020 - PDR - Presentation.pdf" target="_blank" rel="noreferrer noopener"><i class="material-icons" style="font-size: 11px;">insert_drive_file</i>Presentation</a></p>
+				</td>
+				<td>
+					<p style="padding: 0px; margin: 0px;"><a class="content-text" href="files/rocket20/UCLA - 2020 - CDR - Report.pdf" target="_blank" rel="noreferrer noopener"><i class="material-icons" style="font-size: 11px;">insert_drive_file</i>Report</a></p>
+					<p style="padding: 0px; margin: 0px;"><a class="content-text" href="files/rocket20/UCLA - 2020 - CDR - Presentation.pdf" target="_blank" rel="noreferrer noopener"><i class="material-icons" style="font-size: 11px;">insert_drive_file</i>Presentation</a></p>
+				</td>
+				<td>
+					<p style="padding: 0px; margin: 0px;"><a class="content-text" href="files/rocket20/UCLA - 2020 - FRR - Report.pdf" target="_blank" rel="noreferrer noopener"><i class="material-icons" style="font-size: 11px;">insert_drive_file</i>Report</a></p>
+					<p style="padding: 0px; margin: 0px;"><a class="content-text" href="files/rocket20/UCLA - 2020 - FRR - Presentation.pdf" target="_blank" rel="noreferrer noopener"><i class="material-icons" style="font-size: 11px;">insert_drive_file</i>Presentation</a></p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="content-padding" id="context&struggles">
+		<h1>3. Context & Struggles</h1>
+		<p>Following the success of <a href="rocket_project_2019.html">Bearospace's entry in the previous year's FNL competition</a>, the team decided to challenge ourselves to compete in the higher caliber competition that is NASA's USLI. In FNL, only native American clubs can participate. In USLI, any team of any background can compete. To give a sense of how much more difficult this competition was for our team, the FNL deliverables were limited to a max of 50 pages. In USLI, the limit is 250 pages.</p>
+		<p>To make matters worse, our previous team of 10 was diminished to only 3 in a competition where team sizes are in the range of 30-50 members. We had no new member retention from the previous year, so there was a large knowledge gap between the 3 juniors and the handful of incoming freshmen. This also meant that the 3 of us who knew how to do rocketry could not expect support from the incoming freshman since they were new to collegiate rocketry. </p>
+		<p>Learning the new rules and expectations of USLI, balancing 2 lead roles, and solving a harder payload challenge all while attempting to teach freshman the basics of engineering and rocketry was a huge endeavour. Responsibility for writing milestone reports fell almost exclusively on the 3 of us since freshman had no idea what was going on, nor did they have a desire to write. Oh and don't forget the 45 min presentation to NASA engineers.</p>
+		<p>Finally, since USLI required teams to fund themselves (as oppposed to FNL where funding was provided by the competition), the team also had to attend corporate outreach events to talk to network for funding. Since funding is a rather bureacratic process, components were purchased with personal money with the hope that we would get reimbursed (we did).</p>
+		<p>This entire project and club was a huge labor of love from all 3 of us. To say I came out a better person, writer, and engineer would be an understatement. I learned a lot about what I am capable of and validated my strong work ethic.</p>
+		<p><i>Despite COVID ruining our team's breakthrough competition, I would say this is one of my proudest achievements.</i></p>
+	</div>
+
+	<div class="content-padding">
+		<h1>4. Pictures</h1>
+		<div class="img-row">
+			<div class="img-column">
+				<img src="pictures/rocket20/collage/1.jpg">
+				<img src="pictures/rocket20/collage/2.jpg">
+				<img src="pictures/rocket20/collage/3.jpg">
+				<img src="pictures/rocket20/collage/4.jpg">
+				<img src="pictures/rocket20/collage/5.jpg">
+				<img src="pictures/rocket20/collage/6.jpg">
+				<img src="pictures/rocket20/collage/7.jpg">
+				<img src="pictures/rocket20/collage/8.jpg">
+				<img src="pictures/rocket20/collage/9.jpg">
+				<img src="pictures/rocket20/collage/10.jpg">
+				<img src="pictures/rocket20/collage/11.jpg">
+				<img src="pictures/rocket20/collage/12.jpg">
+			</div>
+			<div class="img-column">
+				<img src="pictures/rocket20/collage/20.jpg">
+				<img src="pictures/rocket20/collage/13.jpg">
+				<img src="pictures/rocket20/collage/14.jpg">
+				<img src="pictures/rocket20/collage/15.jpg">
+				<img src="pictures/rocket20/collage/16.jpg">
+				<img src="pictures/rocket20/collage/17.jpg">
+				<img src="pictures/rocket20/collage/18.jpg">
+				<img src="pictures/rocket20/collage/19.jpg">
+				<img src="pictures/rocket20/collage/21.jpg">
+				<img src="pictures/rocket20/collage/24.jpg">
+			</div>
+			<div class="img-column">
+				<img src="pictures/rocket20/collage/29.jpg">
+				<img src="pictures/rocket20/collage/25.jpg">
+				<img src="pictures/rocket20/collage/26.jpg">
+				<img src="pictures/rocket20/collage/27.jpg">
+				<img src="pictures/rocket20/collage/28.jpg">
+				<img src="pictures/rocket20/collage/22.jpg">
+				<img src="pictures/rocket20/collage/30.jpg">
+				<img src="pictures/rocket20/collage/31.jpg">
+				<img src="pictures/rocket20/collage/32.jpg">
+				<img src="pictures/rocket20/collage/33.jpg">
+				<img src="pictures/rocket20/collage/34.jpg">
+				<img src="pictures/rocket20/collage/35.jpg">
+				<img src="pictures/rocket20/collage/23.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("demo2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+window.onresize = window.onload =  function() {
+    var width = window.innerWidth;
+    var elms = document.querySelectorAll("[id='large_block_diagram']");
+
+    if (width <= 675){
+    	for(var i = 0; i < elms.length; i++){
+    		elms[i].setAttribute("viewBox", "0 0 8 20");
+    	}
+    }
+    else{
+    	for(var i = 0; i < elms.length; i++){
+    		elms[i].setAttribute("viewBox", "0 0 20 8");
+    	}
+    }
+}
+</script>
+</html>
