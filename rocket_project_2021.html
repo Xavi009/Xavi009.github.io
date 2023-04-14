@@ -92,7 +92,7 @@
 		<h2>2.1. Payload</h2>
 		<p>As the payloads lead, I was responsible for designing and virtually testing the payload and its associated deployment/retention system. This meant a lot of SolidWorks, maintaining an exhaustive BOM, and virtually stress testing mission-critical components using SolidWorks FEA tools.</p>
 		<div class="w3-row">
-			<div class="w3-col l12 m12 s12">
+			<div class="w3-col s12">
 				<img class="image-gal" src="pictures/rocket21/upper_body_tube_payload.png">
 			</div>	
 		</div>
@@ -114,19 +114,19 @@
 		</div>
 		<p>The payload assembly is a 6.1" tall by 4.4" diameter 3-legged lander that houses electronics necessary for completing the mission within its body. Each leg is individually controlled by a singular servo motor. While within the launch vehicle, the payload's legs are packed in an upright configuration to minimize the effective volume of the payload. During descent, the legs will be actuated to be parallel with the base of the payload to effectively increase the surface area of the payload for landing. Once a landing event is detected, the payload will orient itself within 5<span>&#176;</span> of vertical by rotating the legs and obtaining feedback from a gyroscope/accelerometer module. A central column perches the camera for a greater field of view of the landing site. The camera is mounted on a continuous servo motor to rotate the camera 360<span>&#176;</span>. In order to center the camera within the payload and provide the camera with a clear view of the landing site for taking pictures, acrylic sheets are used. The main cover is attached to the base of the payload using six pairs of M2.5 screws and M2.5 threaded heat set inserts which are implemented in the base component for a strong and detachable interface. The use of screws and heat set inserts allows the team to easily access and troubleshoot electronics within the payload. Electronics within the payload are harnessed using pairs of M2.5 screws and threaded heat set inserts or are compartmentalized within the base component of the payload.</p>
 		<div class="w3-row">
-			<div class="w3-col l12 m12 s12">
+			<div class="w3-col s12">
 				<img class="image-gal" style="max-width: 500px;" src="pictures/rocket21/payload_exploded.jpg">
 			</div>	
 		</div>
 
 		<h3>2.1.2. Retention System Assembly</h3>
 		<div class="w3-row">
-			<div class="w3-col l12 m12 s12">
+			<div class="w3-col s12">
 				<img class="image-gal" style="max-width: 170px;" src="pictures/rocket21/retention_system.png">
 		</div>
 		<p>The retention system used involves a cage-like mechanism that houses the payload from within. The retention system is tethered to the launch vehicle's main parachute shock cord using two 3/8" galvanized steel eyebolts and is deployed during the vehicle's main parachute's deployment at 700 ft AGL. The bottom of the retention system is tethered to the launch vehicle's bulkhead and the other side is tethered to the main parachute using separate shock cords. The 30" length shock cord between the retention system and the launch vehicle's bulkhead allows the payload to exit the 16" long body tube and jettison the payload without colliding with the launch vehicle. An added shield component is packed upright within the launch vehicle to prevent the payload from colliding and damaging itself with the inner wall of the upper body tube during deployment. The shield is tethered to the bottom-most eyebolt as shown above to prevent the component from detaching from the launch vehicle.</p>
 		<div class="w3-row">
-			<div class="w3-col l12 m12 s12">
+			<div class="w3-col s12">
 				<img class="image-gal" style="max-width: 500px;" src="pictures/rocket21/retention_system_exploded.png">
 			</div>
 		</div>
@@ -134,29 +134,17 @@
 
 
 		<h2>2.2. Locking Mechanism & Avionics Sled</h2>
-		<p>A miscellaneous component I was in charge of was devising a secure and repeatable way to place electronics within the launch vehicle without compromising the structural integrity of the vehicle's safety hardware. The devised solution is a slide-and-lock locking mechanism that also holds the avionics sled. This allows the team to make all necessary wiring from outside the launch vehicle and then lock the entire system into place without damaging the launch vehicle like other teams.</p>
+		<p>A miscellaneous component I was in charge of was devising a secure and repeatable way to place electronics within the launch vehicle without compromising the structural integrity of the vehicle's safety hardware. The devised solution is a slide-and-lock locking mechanism that also holds the avionics sled. This allows the team to make all necessary wiring from outside the launch vehicle and then lock the entire system into place without damaging the launch vehicle using screws like other teams.</p>
 		<div class="w3-row">
 			<div class="w3-col s12"><img class="image-gal" style="max-width:650px" src="pictures/rocket21/avionics_bay_exploded.PNG"></div>
 		</div>
-		<p>The locking mechanism is comprised of 3 different sections: (1) Inner ring (2) Avionics sled & electronics (3) outer ring. The inner and outer rings are made from .75" thick pine wood planks and reinforced with .12" thick aluminum sheets. The pine wood pieces were manufactured to shape using a CNC mill and the metal sheets were waterjet all by yours truly. The avionics sled and the 9V battery holders are 3D printed with PLA plastic. Small sheets of balsa wood are epoxied to cutouts of the sled to provide a surface that can be screwed onto. The 2 altimeters and Arduino Uno are screwed onto the sled's wood using 4-40 screws. All other components are epoxied together to provide two cohesive components (inner ring + sled and outer ring).</p>
+		<p>The locking mechanism is comprised of an inner and outer ring. The inner and outer rings are made from .75" thick pine wood planks and reinforced with .12" thick aluminum sheets. This year, the avionics sled was setup differently. Instead of attaching the sled to the inner ring of the locking mechanism, the sled slides into two threaded rods attached to a bulkhead. Because of the load-bearing importance of the bulkhead, this bulkhead is also reinforced with a .12" thick aluminum sheet. The avionics sled is held in place with lock nuts using the threaded rods. Heat-set inserts are welded into the plastic sled so that electronics can be screwed onto the sled using M2.5 screws, as shown below.</p>
 		<div class="w3-row">
-			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Built 1.JPG"></div>
-			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Built 2.JPG"></div>
+			<div class="w3-col s12"><img class="image-gal" style="max-width:450px" src="pictures/rocket21/avionics_sled_assembly_exploded.PNG"></div>
 		</div>
-		<p>Because the locking mechanism is also a load bearing component for the launch vehicle's safety hardware, the locking mechanism was virtually and physically tested. Compared to a traditional bulkhead, the locking mechanism experiences greater stress since all forces are concentrated to 3 cantilever tabs. The outer ring's cross-sectional area is also reduced which further concentrates stress. The locking mechanism was tested with a safety factor of 4 in both virtual and physical tests.</p>
-		<div class="w3-row">
-			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Virtual 1.png"></div>
-			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Virtual 2.png"></div>
-		</div>
-		<div class="w3-row">
-			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Physical 1.jpg"></div>
-			<div class="w3-col m6 s12"><img class="image-gal" src="pictures/rocket20/Locking Mechanism Test Physical 2.jpg"></div>
-		</div>
-		<p>Virtually testing the composite assemblies in SolidWorks verified the mechanism's ability to withstand flight forces with a factor of safety of 4. Physical testing resulted in permanent damage to a prototype sled but no damage was sustained by the tabs of the inner and outer rings of the locking mechanism. The sled was improved as shown in the 3D model of the locking mechanism.</p>
-
 
 		<h2>2.3. Virtual Testing</h2>
-
+		<p></p>
 
 
 
