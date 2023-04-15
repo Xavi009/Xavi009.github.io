@@ -144,8 +144,37 @@
 		</div>
 
 		<h2>2.3. Virtual Testing</h2>
-		<p></p>
+		<p>Because of the virtual nature of this year's competition, all stress testing was done using SolidWorks FEA with no physical testing for verification. Since I was in charge of the locking mechanism and payload, 3 load-bearing components were identified.</p>
+		<h3>2.3.1. Locking Mechanism</h3>
+		<p>The locking mechanism must endure shock forces experienced during the launch vehicle's drogue chute deployment. Since this assembly is related to the safety of the launch vehicle, a factor of safety of 4 was applied to the expected force for all testing.</p>
+		<p>For the inner locking mechanism, the 3 tab sections were grounded during FEA analysis and a force was applied on the underside of the system. This force was limitied to the area of a hex nut. A similar approach was taken for the outer ring. The outer diameter of the ring was grounded and 3 forces totalling the expected force were applied on the underside of the top ring. These forces were limited to the area of the tabs of the inner ring.</p>
+		<div class="w3-row">
+			<div class="w3-col m6 s12"><img class="image-gal" style="max-width:450px" src="pictures/rocket21/inner_lock_stress_test.png"></div>
+			<div class="w3-col m6 s12"><img class="image-gal" style="max-width:450px" src="pictures/rocket21/outer_lock_stress_test.png"></div>
+		</div>
 
+		<table class="general-table  no-stripe">
+			<tr>
+				<th>Component</th>
+				<th>Expected Force (lbf)</th>
+				<th>Factor of Safety Force (x4) (lbf)</th>
+				<th>Max von Mises Stress (psi)</th>
+				<th>Yield Strength of 6061 Aluminum (psi)</th>
+			</tr>
+			<tr>
+				<td>Inner Ring</td>
+				<td>18.69</td>
+				<td>74.79</td>
+				<td>1762</td>
+				<td rowspan="2">40000</td>
+			</tr>
+			<tr>
+				<td>Outer Ring</td>
+				<td>18.69</td>
+				<td>74.79</td>
+				<td>68.75</td>
+			</tr>
+		</table>
 
 
 		<h2>2.4. Reports & Presentations</h2>

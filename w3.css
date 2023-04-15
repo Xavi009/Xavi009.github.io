@@ -260,6 +260,7 @@ body, html {
 .general-table td{padding:8px 8px; display:table-cell; text-align:left; vertical-align:top}
 .general-table td, .general-table th{border-left: 1px solid #ccc;}
 .general-table.no-stripe tr:nth-child(odd){background-color:#fff} .general-table.no-stripe tr:nth-child(even){background-color:#fff}
+.general-table.centered-table td{text-align: center; vertical-align: middle;}
 .general-table-center {vertical-align: middle; text-align: center;}
 
 @media screen and (max-width: 570px){
