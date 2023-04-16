@@ -143,8 +143,37 @@
 			<div class="w3-col s12"><img class="image-gal" style="max-width:450px" src="pictures/rocket21/avionics_sled_assembly_exploded.PNG"></div>
 		</div>
 
+
+		<!-- Too much clutter to include
+		<h2>2.3. Build Instructions</h2>
+		<p>The Design Only division of the competition required build instructions to be included in the FRR. Emphasis was placed on creating "LEGO-like" visual build instructions. The following are build instructions for the Locking Mechanism & Avionics Sled, Payload Retention Assembly, and the payload itslef.</p>
+		<h3>2.3.1. Locking Mechanism</h3>
+		<div class="picture-dump">
+			<img src="pictures/rocket21/instructions/payload_assembly_1.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_2.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_3.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_4.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_5.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_6.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_7.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_8.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_9.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_10.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_11.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_12.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_13.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_14.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_15.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_16.png">
+			<img src="pictures/rocket21/instructions/payload_assembly_17.png">
+		</div>
+		<h3>2.3.2. Payload Retention Assembly</h3>
+		<h3>2.3.3. Payload</h3>
+		-->
+
+
 		<h2>2.3. Virtual Testing</h2>
-		<p>Because of the virtual nature of this year's competition, all stress testing was done using SolidWorks FEA with no physical testing for verification. Since I was in charge of both the locking mechanism and payload, 3 load-bearing components were identified on these sub-systems.</p>
+		<p>Because of the virtual nature of this year's competition, all stress testing was done using SolidWorks FEA with no physical testing for verification. Since I was in charge of both the locking mechanism and payload, 3 load-bearing components were identified for these sub-systems.</p>
 		<h3>2.3.1. Locking Mechanism</h3>
 		<p>The locking mechanism must endure shock forces experienced during the launch vehicle's drogue chute deployment. Since this assembly is related to the safety of the launch vehicle, a factor of safety of 4 was applied to the expected force for all testing.</p>
 		<p>For the inner locking mechanism, the 3 tab sections were grounded during FEA analysis and a force was applied on the underside of the system. This force was limitied to the area of a hex nut. A similar approach was taken for the outer ring. The outer diameter of the ring was grounded and 3 forces totalling the expected force were applied on the underside of the top ring. These forces were limited to the area of the tabs of the inner ring.</p>
@@ -176,15 +205,65 @@
 			</tr>
 		</table>
 		<h3>2.3.2. Retention System Assembly</h3>
-		<p></p>
+		<p>Since the Retention System Assembly is connected between the main parachute and the launch vehicle via the main shock cord, the Assembly is also a mission critical component related to the overall safety of the launch vehicle. Like the locking mechanism, the Retention System Assembly components are also tested with a factor of safety of 4. However, the expected force is different since at this point the rocket already deployed its drogue chute and will deploy its main chute.</p>
+		<p>Two load-bearing components were identified on the Retention System Assembly: (1) the 3/8" threaded rods running across the assembly (2) the pine and aluminum bulkheads attached to the eyebolts.</p>
+		<p>(1) To reduce computation time, the 3/8" threaded rods were modelled as a simple cylinder with a 3/8" diameter. Half the testing load was applied to a single rod as there are two rods in the assembly. (2) A similar approach to the locking mechanism was implemented to the bulkhead ends of the assembly. The applied force was limited to the area of the lock nut on the eyebolt. The bulkhead was grounded at two, lock nut shaped areas where the bulkhead interfaces with the 3/8" threaded rods.</p>
+		<div class="w3-row">
+			<div class="w3-col m4 s12"><img class="image-gal" style="max-width:450px" src="pictures/rocket21/retention_system_rod_stress_test.png"></div>
+			<div class="w3-col m8 s12"><img class="image-gal" style="max-width:450px" src="pictures/rocket21/retention_system_bulkhead_stress_test.png"></div>
+		</div>
+
+		<table class="general-table centered-table no-stripe">
+			<tr>
+				<th>Component</th>
+				<th>Expected Force (lbf)</th>
+				<th>Factor of Safety Force (x4) (lbf)</th>
+				<th>Max von Mises Stress (psi)</th>
+				<th>Yield Strength (psi)</th>
+			</tr>
+			<tr>
+				<td>3/8" Threaded Rod</td>
+				<td>20.30</td>
+				<td>81.20</td>
+				<td>193.2</td>
+				<td>36000 (alloy steel)</td>
+			</tr>
+			<tr>
+				<td>Bulkhead</td>
+				<td>10.15</td>
+				<td>40.60</td>
+				<td>96.70</td>
+				<td>40000 (aluminum)</td>
+			</tr>
+		</table>
 		<h3>2.3.3. Lander</h3>
-		<p></p>
+		<p>The payload itself also contains a parachute system. As such, it is important to test the load-bearing capabilities of the payload to ensure human and mission safety. The top cap that contains an eyelet for the payload's parachute was idenfitied as a point of concern. A simulation force was applied on the inner area of the eyelet/loop with an "upwards" vector. The inner sections where the acrylic sheets are glued were grounded.</p>
+		<div class="w3-row">
+			<div class="w3-col s12"><img class="image-gal" style="max-width:450px" src="pictures/rocket21/retention_system_cap_stress_test.png"></div>
+		</div>
+
+		<table class="general-table centered-table no-stripe">
+			<tr>
+				<th>Component</th>
+				<th>Expected Force (lbf)</th>
+				<th>Factor of Safety Force (x4) (lbf)</th>
+				<th>Max von Mises Stress (psi)</th>
+				<th>Yield Strength of ABS (psi)</th>
+			</tr>
+			<tr>
+				<td>Payload Top Cap</td>
+				<td>0.90</td>
+				<td>3.62</td>
+				<td>68.79</td>
+				<td>7000</td>
+			</tr>
+			<tr>
+		</table>
 
 
 		<h2>2.4. Reports & Presentations</h2>
-		<p>A huge component of being a technical lead is writing reports detailing the progress of the project. As the payloads and electronics lead, I was in charge of writing the technical details of all electrical hardware and payload structural components, create electrical schematics and engineering drawings, create test plans, and verify requirements compliance within each relevant subsection. In addition to reports, presentations were created and presented to NASA engineers for 45 min with a 15 min Q&A.</p>
-		<p>Having no experience with writing large reports, our first PDR report was not the best quality (reaching only a measly 110 pages). After this point, the bar was raised and the subsequent CDR and FRR reports were a minimum of 200 pages.</p>
-		<p>AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</p>
+		<p>A huge component of being a technical lead is writing reports detailing the progress of the project. As the payloads, I was in charge of writing the technical details of all payload and locking mechanism structural components, creating engineering drawings, build instructions, and test plans, and verifying requirements compliance within each relevant subsection. In addition to reports, presentations were created and presented to NASA engineers for 45 min with a 15 min Q&A.</p>
+		<p>A lot of focus was placed on giving continuing members more autonomy and experience for the following year when they become leads. Member participation for creating technical drawings, creating build instructions, and writing about these components was a great sign for the longetivity of Bearospace.</p>
 		<table style="width:100%; display:table;">
 			<tr>
 				<td style="padding: 0px; margin: 0px;"><u><b>PDR</b></u></td>
@@ -213,6 +292,8 @@
 		</table>
 	</div>
 
+
+	<!-- Not sure this is needed
 	<div class="content-padding" id="context&struggles">
 		<h1>3. Context & Struggles</h1>
 		<p>Following the success of <a href="rocket_project_2019.html">Bearospace's entry in the previous year's FNL competition</a>, the team decided to challenge ourselves to compete in the higher caliber competition that is NASA's USLI. In FNL, only native American clubs can participate. In USLI, any team of any background can compete. To give a sense of how much more difficult this competition was for our team, the FNL deliverables were limited to a max of 50 pages. In USLI, the limit is 250 pages.</p>
@@ -227,48 +308,49 @@
 		<h1>4. Pictures</h1>
 		<div class="img-row">
 			<div class="img-column">
-				<img src="pictures/rocket21/collage/1.jpg">
-				<img src="pictures/rocket21/collage/2.jpg">
-				<img src="pictures/rocket21/collage/3.jpg">
-				<img src="pictures/rocket21/collage/4.jpg">
-				<img src="pictures/rocket21/collage/5.jpg">
-				<img src="pictures/rocket21/collage/6.jpg">
-				<img src="pictures/rocket21/collage/7.jpg">
-				<img src="pictures/rocket21/collage/8.jpg">
-				<img src="pictures/rocket21/collage/9.jpg">
-				<img src="pictures/rocket21/collage/10.jpg">
-				<img src="pictures/rocket21/collage/11.jpg">
-				<img src="pictures/rocket21/collage/12.jpg">
+				<img src="pictures/rocket20/collage/1.jpg">
+				<img src="pictures/rocket20/collage/2.jpg">
+				<img src="pictures/rocket20/collage/3.jpg">
+				<img src="pictures/rocket20/collage/4.jpg">
+				<img src="pictures/rocket20/collage/5.jpg">
+				<img src="pictures/rocket20/collage/6.jpg">
+				<img src="pictures/rocket20/collage/7.jpg">
+				<img src="pictures/rocket20/collage/8.jpg">
+				<img src="pictures/rocket20/collage/9.jpg">
+				<img src="pictures/rocket20/collage/10.jpg">
+				<img src="pictures/rocket20/collage/11.jpg">
+				<img src="pictures/rocket20/collage/12.jpg">
 			</div>
 			<div class="img-column">
-				<img src="pictures/rocket21/collage/20.jpg">
-				<img src="pictures/rocket21/collage/13.jpg">
-				<img src="pictures/rocket21/collage/14.jpg">
-				<img src="pictures/rocket21/collage/15.jpg">
-				<img src="pictures/rocket21/collage/16.jpg">
-				<img src="pictures/rocket21/collage/17.jpg">
-				<img src="pictures/rocket21/collage/18.jpg">
-				<img src="pictures/rocket21/collage/19.jpg">
-				<img src="pictures/rocket21/collage/21.jpg">
-				<img src="pictures/rocket21/collage/24.jpg">
+				<img src="pictures/rocket20/collage/20.jpg">
+				<img src="pictures/rocket20/collage/13.jpg">
+				<img src="pictures/rocket20/collage/14.jpg">
+				<img src="pictures/rocket20/collage/15.jpg">
+				<img src="pictures/rocket20/collage/16.jpg">
+				<img src="pictures/rocket20/collage/17.jpg">
+				<img src="pictures/rocket20/collage/18.jpg">
+				<img src="pictures/rocket20/collage/19.jpg">
+				<img src="pictures/rocket20/collage/21.jpg">
+				<img src="pictures/rocket20/collage/24.jpg">
 			</div>
 			<div class="img-column">
-				<img src="pictures/rocket21/collage/29.jpg">
-				<img src="pictures/rocket21/collage/25.jpg">
-				<img src="pictures/rocket21/collage/26.jpg">
-				<img src="pictures/rocket21/collage/27.jpg">
-				<img src="pictures/rocket21/collage/28.jpg">
-				<img src="pictures/rocket21/collage/22.jpg">
-				<img src="pictures/rocket21/collage/30.jpg">
-				<img src="pictures/rocket21/collage/31.jpg">
-				<img src="pictures/rocket21/collage/32.jpg">
-				<img src="pictures/rocket21/collage/33.jpg">
-				<img src="pictures/rocket21/collage/34.jpg">
-				<img src="pictures/rocket21/collage/35.jpg">
-				<img src="pictures/rocket21/collage/23.jpg">
+				<img src="pictures/rocket20/collage/29.jpg">
+				<img src="pictures/rocket20/collage/25.jpg">
+				<img src="pictures/rocket20/collage/26.jpg">
+				<img src="pictures/rocket20/collage/27.jpg">
+				<img src="pictures/rocket20/collage/28.jpg">
+				<img src="pictures/rocket20/collage/22.jpg">
+				<img src="pictures/rocket20/collage/30.jpg">
+				<img src="pictures/rocket20/collage/31.jpg">
+				<img src="pictures/rocket20/collage/32.jpg">
+				<img src="pictures/rocket20/collage/33.jpg">
+				<img src="pictures/rocket20/collage/34.jpg">
+				<img src="pictures/rocket20/collage/35.jpg">
+				<img src="pictures/rocket20/collage/23.jpg">
 			</div>
 		</div>
 	</div>
+	-->
 </div>
 
 
