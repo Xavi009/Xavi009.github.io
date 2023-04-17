@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Javier Gomez: Captain Falcon Model</title>
+<title>Javier Gomez: Career</title>
 <link rel="icon" type="image/png" href="pictures/fav-icon.png">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
-<!-------Navbar Section------->
+<!--Navbar-->
 <div class="w3-bar w3-black w3-text-white">
 	<a href="index.html" class="w3-bar-item w3-button w3-left"><img class="navbar-logo" src="pictures/logo.png"></a>
 	<div class="w3-dropdown-click w3-right">
@@ -36,25 +36,36 @@
 	<a href="youtube.html" class="w3-bar-item w3-button">YouTube</a>
 </div>
 
+
 <!--Header-->
-<div class="w3-light-grey">
-	<div class="w3-content w3-container" style="max-width:1200px; padding-top: 90px; padding-bottom: 90px;">
-		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="personal_projects.html" class="text-ref">Personal Projects</a><i class="material-icons">arrow_forward</i><a class="text-ref" href="captain_falcon.html">Captain Falcon Model</a></h1>
-	</div>
-</div>
-
-<!--Past Projects and Experience-->
-<div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
-	<div class="content-padding">
-		<h1>How It's Made</h1>
-		<p>I'm really proud of this project because I made this during my sophomore year in high school when I was just getting into 3D printing and 3D modelling, so I really didn't know what I was doing but I stuck through it. I started by importing a T-Pose SSBM Captain Falcon model from <a href="https://www.models-resource.com/" target="_blank">The Models Resource</a> into Autodesk 3ds Max 2016 and modified it using a biped skeleton. This allows me to map an existing mesh onto a human skeleton, allowing me to shape the existing model into a dynamic pose. Finally, I repaired the exported .STL file from 3ds Max into Microsoft's STL Repair <a href="https://tools3d.azurewebsites.net/" target="_blank">website</a>. This website analyzes and repairs any open surfaces in the .STL file and optimizes the model for 3D printing. The final result was better than anything I would have hoped for.</p>
-		<model-viewer src="files/captain_falcon/trophy.glb" shadow-intensity="2" auto-rotate camera-controls camera-orbit="135deg 60deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;"></model-viewer>
-		<p>Download the files on my Thingiverse <a href="https://www.thingiverse.com/thing:1506971" target="_blank">website</a>.</p>
+<div class="w3-light-grey header-grey">
+	<div class="w3-content w3-container">
+		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a class="text-ref" href="career.html">Career</a></h1>
 	</div>
 </div>
 
 
-<!--Navbar Script-->
+<!--Projects List-->
+<div class="obj-container" style="margin-top: 0px;">
+	<a href="ngc_internships.html">
+		<img class="obj-image" src="pictures/northrop.jpg">
+		<p class="obj-text">Northrop Grumman Internships</p>
+	</a>
+</div>
+<div class="obj-container">
+	<a href="innovive.html">
+		<img class="obj-image" src="pictures/innovive_rats.png">
+		<p class="obj-text" style="color:black">Innovive LLC Internship</p>
+	</a>
+</div>
+<div class="obj-container">
+	<a href="usd_internship.html">
+		<img class="obj-image" src="pictures/geology.jpg" >
+		<p class="obj-text">Geology Internship at USD</p>
+	</a>
+</div>
+
+
 <script>
 function myFunction() {
   var x = document.getElementById("demo");
@@ -64,6 +75,7 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
 function myFunction2() {
   var x = document.getElementById("demo2");
   if (x.className.indexOf("w3-show") == -1) {
@@ -73,7 +85,4 @@ function myFunction2() {
   }
 }
 </script>
-<!--Model Viewer-->
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </html>

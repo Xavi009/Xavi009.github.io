@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Javier Gomez: Captain Falcon Model</title>
+<title>Javier Gomez: Ping Pong Paddle</title>
 <link rel="icon" type="image/png" href="pictures/fav-icon.png">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +39,7 @@
 <!--Header-->
 <div class="w3-light-grey">
 	<div class="w3-content w3-container" style="max-width:1200px; padding-top: 90px; padding-bottom: 90px;">
-		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="personal_projects.html" class="text-ref">Personal Projects</a><i class="material-icons">arrow_forward</i><a class="text-ref" href="captain_falcon.html">Captain Falcon Model</a></h1>
+		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="personal_projects.html" class="text-ref">Personal Projects</a><i class="material-icons">arrow_forward</i><a class="text-ref" href="ping_pong_paddle.html">Ping Pong Paddle</a></h1>
 	</div>
 </div>
 
@@ -47,9 +47,21 @@
 <div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
 	<div class="content-padding">
 		<h1>How It's Made</h1>
-		<p>I'm really proud of this project because I made this during my sophomore year in high school when I was just getting into 3D printing and 3D modelling, so I really didn't know what I was doing but I stuck through it. I started by importing a T-Pose SSBM Captain Falcon model from <a href="https://www.models-resource.com/" target="_blank">The Models Resource</a> into Autodesk 3ds Max 2016 and modified it using a biped skeleton. This allows me to map an existing mesh onto a human skeleton, allowing me to shape the existing model into a dynamic pose. Finally, I repaired the exported .STL file from 3ds Max into Microsoft's STL Repair <a href="https://tools3d.azurewebsites.net/" target="_blank">website</a>. This website analyzes and repairs any open surfaces in the .STL file and optimizes the model for 3D printing. The final result was better than anything I would have hoped for.</p>
-		<model-viewer src="files/captain_falcon/trophy.glb" shadow-intensity="2" auto-rotate camera-controls camera-orbit="135deg 60deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;"></model-viewer>
-		<p>Download the files on my Thingiverse <a href="https://www.thingiverse.com/thing:1506971" target="_blank">website</a>.</p>
+		<p>This was my first original design that was iteratively developed using my own 3D printer back in junior year of high school. I learned how to design parts that are feasible to manufacture and assemble using an FDM 3D printer. The inspiration for this was to bring my passion for tennis into the table tennis world.</p>
+		<p>I designed the part using the then free-to-use Fusion 360. I started by importing side images of a ping pong paddle and creating sketch outlines of the general shape of a regulation paddle. I then modified the paddle to operate like a tennis racquet, paying special attention to having an even number of cross and main strings. I then had my buddy string the ping pong paddle for me using actual tennis strings. This completely warped the plastic since the stringing machine applies too much tension. The strings were replaced with floss.</p>
+		<div class="w3-row">
+			<div class="w3-col m5 s12">
+				<img class="image-gal" src="pictures/ping_pong_paddle/paddle_mid_string.jpg">
+			</div>	
+			<div class="w3-col m7 s12">
+				<img class="image-gal" style="max-height: 341px;" src="pictures/ping_pong_paddle/paddle_strung.jpg">
+			</div>	
+		</div>
+		<model-viewer src="files/ping_pong_paddle/paddle.glb" shadow-intensity="1" auto-rotate camera-controls camera-orbit="45deg 50deg" interaction-policy="allow-when-focused" interaction-prompt="none" style="background-color: #f1f1f1; height: 500px;" exposure="0.45"></model-viewer>
+		<p>Download the files on my Thingiverse <a href="https://www.thingiverse.com/thing:1481584" target="_blank">website</a>.</p>
+		<h2>Now I bet you're wondering if this worked...</h2>
+		<p>No...it's incredibly harder to play ping pong with this. With this design it's possible to "frame" a shot since there is a frame now. Additionally, the lack of friction between string and ball prevents a player from applying spin or slice effects.</p>
+		<p>All in all, I'm super happy with how my first true 3D model turned out. It was a fun joke to make.</p>
 	</div>
 </div>
 

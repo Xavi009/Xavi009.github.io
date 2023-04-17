@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Javier Gomez: Internships</title>
+<title>Javier Gomez: USD Internship</title>
 <link rel="icon" type="image/png" href="pictures/fav-icon.png">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,34 +38,22 @@
 
 
 <!--Header-->
-<div class="w3-light-grey header-grey">
-	<div class="w3-content w3-container">
-		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a class="text-ref" href="internships.html">Internships</a></h1>
+<div class="w3-light-grey">
+	<div class="w3-content w3-container" style="max-width:1200px; padding-top: 90px; padding-bottom: 90px;">
+		<h1 class="w3-center"><a class="text-ref" href="index.html">Home</a><i class="material-icons">arrow_forward</i><a href="career.html" class="text-ref">Career</a><i class="material-icons">arrow_forward</i><a href="ngc_internships.html" class="text-ref">NGC Internships</a></h1>
 	</div>
 </div>
 
 
-<!--Projects List-->
-<div class="obj-container" style="margin-top: 0px;">
-	<a href="#">
-		<img class="obj-image" src="pictures/northrop.jpg">
-		<p class="obj-text">Northrop Grumman</p>
-	</a>
-</div>
-<div class="obj-container">
-	<a href="innovive.html">
-		<img class="obj-image" src="pictures/innovive_rats.png">
-		<p class="obj-text" style="color:black">Innovive LLC</p>
-	</a>
-</div>
-<div class="obj-container">
-	<a href="usd_internship.html">
-		<img class="obj-image" src="pictures/geology.jpg" >
-		<p class="obj-text">Geology Internship at USD</p>
-	</a>
+<!--Content-->
+<div class="w3-container w3-content" style="max-width: 850px; padding-top: 25px;">
+	<div class="content-padding">
+		<p>Wouldn't you like to know...</p>
+	</div>
 </div>
 
 
+<!---NavBar--->
 <script>
 function myFunction() {
   var x = document.getElementById("demo");
@@ -75,7 +63,6 @@ function myFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
-
 function myFunction2() {
   var x = document.getElementById("demo2");
   if (x.className.indexOf("w3-show") == -1) {
@@ -85,4 +72,23 @@ function myFunction2() {
   }
 }
 </script>
+<!---Collapsible--->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<!--3D Model Stuff--->
+
+
 </html>
