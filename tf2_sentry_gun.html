@@ -71,6 +71,11 @@
 
 	<div class="content-padding">
 		<h1>Electronics</h1>
+		<div class="w3-row">
+			<div class="w3-col s12">
+				<img class="image-gal" style="max-width: 100%;" src="pictures/sentry_gun/electronics.JPG">
+			</div>
+		</div>
 		<p>The electronics section can be simplified into 4 different sections that interface with the microcontroller (Arduino Nano in this case).</p>
 		<h3>1) Micro SD Card Module</h3>
 		<p>Interfaces a micro SD card with the Nano. The audio file is stored and accessed in the micro SD card. The audio file must be converted to a .WAV with 8 bit resolution, 16000 Hz sampling rate, and mono audio channels. Use <a href="https://audio.online-convert.com/convert-to-wav" target="_blank">this website</a> to convert audio files to the appropriate .WAV format.</p>
@@ -81,7 +86,7 @@
 		<h3>4) Push Button</h3>
 		<p>This aspect of the project is simple. Simply ground the button on the same side as the probing pin and provide a 5V supply on the other side of the button. When the button is pressed, the 5V side will flow towards the probing pin rather than through the resistor, indicating the button has been pressed.</p>
 		<div class="w3-row">
-			<div class="w3-col l12 m12 s12">
+			<div class="w3-col s12">
 				<img class="image-gal" style="max-width: 100%;" src="pictures/sentry_gun/schematic.png">
 			</div>
 		</div>
