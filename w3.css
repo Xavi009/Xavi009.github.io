@@ -67,10 +67,17 @@ body, html {
 	color: #777;
 }
 .skills-list{
-	text-align: justify;
-	font-size: 15px;
+	margin: 16px 0px;
+	padding: 16px 0px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .skills-list li{
+	font-size: 15px;
 	display: inline-block;
 	background-color: #616161;
 	color: white;
